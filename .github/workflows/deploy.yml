@@ -41,6 +41,7 @@ jobs:
           git add data/
           if ! git diff --staged --quiet; then
             git commit -m "🌰 Weekly data update — $(date -u '+%Y-%m-%d')"
+            git pull --rebase || true
             git push
           fi
 
@@ -51,10 +52,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: 🌰 Checkout (with latest data)
+      - name: 🌰 Checkout (with latest data from update job)
         uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
 
       - name: 🌰 Setup Pages
         uses: actions/configure-pages@v5
