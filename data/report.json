@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-09T05:14:36.980Z",
+    "model": "fallback",
+    "bridgesAnalyzed": 80
+  },
+  "summary": {
+    "totalBridges": 80,
+    "totalTVL": 36907279519.85996,
+    "riskBreakdown": {
+      "CRITICAL": 1,
+      "HIGH": 2,
+      "MEDIUM": 24,
+      "LOW": 53
+    },
+    "totalVolume24h": 214121205.5366639,
+    "totalVolume7d": 1034845392.8166289
+  },
+  "report": "## 🌰 Bridge Security Intelligence Brief — Mon Mar 09 2026\n\n**Executive Summary:** Cross-chain bridges remain the highest-value attack surface in DeFi, with over $2.85B stolen in recorded exploits. This week's scan of 80 active bridges identifies 1 protocols at CRITICAL risk and 2 at HIGH risk, collectively securing $36.9B in total value locked.\n\n**Risk Landscape:** Multichain leads the CRITICAL-risk category with a score of 70/100, operating across 54 chains. Historical data demonstrates that validator key compromise remains the single most devastating attack vector — the Ronin ($625M) and Multichain ($125M) hacks both resulted from insufficient key management. Bridges with multi-chain architectures face multiplicative risk: each chain integration adds relay trust assumptions, additional smart contract surface, and potential state divergence vulnerabilities.\n\n**Capital Concentration:** WBTC holds approximately $7.9B in bridge TVL, representing an economically compelling target. At historical exploit-to-TVL ratios, a successful attack against any top-5 bridge could net an attacker $100M–$500M. This economics reality justifies sustained adversarial investment in reconnaissance — defenders must assume they are continuously targeted.\n\n**Key Takeaways:**\n🌰 Validator key management (HSMs, geographic distribution, ≥7/10 multi-sig) is non-negotiable for bridges holding >$100M TVL\n🌰 Previously exploited bridges carry 40%+ recurrence risk — require complete architecture review before redeployment\n🌰 Monitor volume anomalies (>3× daily baseline) as early indicators of in-progress drains\n🌰 Smart contract upgradeability without 48-72h timelocks is a critical unmitigated risk factor",
+  "topRiskBridges": [
+    {
+      "name": "Multichain",
+      "riskScore": 70,
+      "riskLevel": "CRITICAL",
+      "chainCount": 54,
+      "tvl": 44388740.815215595,
+      "exploitHistory": {
+        "found": true,
+        "details": {
+          "amount": 125000000,
+          "year": 2023
+        }
+      }
+    }
+  ],
+  "recentExploits": [
+    {
+      "id": "orbit-bridge-2024",
+      "name": "Orbit Chain Bridge",
+      "date": "2024-01-01",
+      "amount": 82000000,
+      "amountDisplay": "$82M",
+      "chain": "Multiple chains",
+      "bridge": "Orbit Bridge",
+      "method": "Compromised multi-sig (7 of 10)",
+      "category": "Key Compromise",
+      "status": "Investigation ongoing",
+      "description": "New Year's Eve attack draining $82M across USDT, USDC, WBTC, ETH, and DAI from Orbit Chain's cross-chain bridge.",
+      "severity": "critical"
+    },
+    {
+      "id": "multichain-2023",
+      "name": "Multichain (Anyswap)",
+      "date": "2023-07-06",
+      "amount": 125000000,
+      "amountDisplay": "$125M",
+      "chain": "Multiple chains",
+      "bridge": "Multichain",
+      "method": "Suspected private key compromise of CEO",
+      "category": "Key Compromise",
+      "status": "Largely unrecovered",
+      "description": "Abnormal outflows from Multichain MPC address pools. CEO reportedly detained by Chinese authorities, keys believed compromised. Service permanently shut down.",
+      "severity": "critical"
+    },
+    {
+      "id": "bsc-token-hub-2022",
+      "name": "BSC Token Hub (BNB Bridge)",
+      "date": "2022-10-06",
+      "amount": 570000000,
+      "amountDisplay": "$570M",
+      "chain": "BSC / Beacon Chain",
+      "bridge": "BSC Token Hub",
+      "method": "Fake proof forgery in IAVL tree verification",
+      "category": "Cryptographic Flaw",
+      "status": "Most funds frozen on-chain",
+      "description": "Attacker forged proofs in the BSC cross-chain bridge, creating 2M BNB from thin air. BNB Chain halted the network to limit damage.",
+      "severity": "critical"
+    },
+    {
+      "id": "celer-cbridge-2022",
+      "name": "Celer cBridge (DNS hijack)",
+      "date": "2022-08-17",
+      "amount": 240000,
+      "amountDisplay": "$240K",
+      "chain": "Multiple chains",
+      "bridge": "Celer cBridge",
+      "method": "DNS hijacking of bridge frontend",
+      "category": "Frontend Attack",
+      "status": "Contained quickly",
+      "description": "DNS cache poisoning redirected cBridge users to a malicious contract. Small losses due to quick detection.",
+      "severity": "high"
+    }
+  ]
+}

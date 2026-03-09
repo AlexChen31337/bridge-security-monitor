@@ -577,14 +577,14 @@
       <div class="stat-sub">Risk score 50–69</div>
     </div>
     <div class="stat-card">
-      <div class="stat-label">💰 24h Volume</div>
-      <div class="stat-value" id="stat-vol24">—</div>
-      <div class="stat-sub">Total cross-chain flow</div>
+      <div class="stat-label">🔒 Total TVL</div>
+      <div class="stat-value" id="stat-tvl">—</div>
+      <div class="stat-sub">Value locked in bridges</div>
     </div>
     <div class="stat-card">
-      <div class="stat-label">📅 7d Volume</div>
-      <div class="stat-value" id="stat-vol7d">—</div>
-      <div class="stat-sub">Weekly bridge activity</div>
+      <div class="stat-label">🌐 Most Chains</div>
+      <div class="stat-value" id="stat-max-chains">—</div>
+      <div class="stat-sub">Largest chain surface</div>
     </div>
     <div class="stat-card">
       <div class="stat-label">💸 Historical Losses</div>
@@ -770,8 +770,8 @@ function renderBridgeRow(b) {
         </div>
       </div>
       <div class="bridge-col">
-        <div class="bridge-col-label">7-day volume</div>
-        <div class="bridge-col-value">${fmtUSD(b.volume7d)}</div>
+        <div class="bridge-col-label">TVL</div>
+        <div class="bridge-col-value">${fmtUSD(b.tvl || b.volume7d)}</div>
       </div>
       <div class="bridge-col">
         <div class="bridge-col-label">Chains</div>
@@ -848,8 +848,9 @@ async function loadBridges() {
     document.getElementById('stat-total').textContent = summary.totalBridges;
     document.getElementById('stat-critical').textContent = summary.byRiskLevel.CRITICAL;
     document.getElementById('stat-high').textContent = summary.byRiskLevel.HIGH;
-    document.getElementById('stat-vol24').textContent = fmtUSD(summary.totalVolume24h);
-    document.getElementById('stat-vol7d').textContent = fmtUSD(summary.totalVolume7d);
+    document.getElementById('stat-tvl').textContent = fmtUSD(summary.totalTVL || summary.totalVolume7d);
+    const maxChains = bridges.reduce((m, b) => Math.max(m, b.chainCount || 0), 0);
+    document.getElementById('stat-max-chains').textContent = maxChains;
     document.getElementById('last-updated').textContent = 'Updated: ' + fmtDate(meta.generatedAt);
     document.getElementById('bridge-count').textContent = `${bridges.length} bridges`;
 
