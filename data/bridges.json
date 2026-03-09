@@ -3,7 +3,7 @@
     "description": "🌰 Bridge Security Monitor — live bridge risk scores",
     "source": "DeFiLlama Protocols API (https://api.llama.fi/protocols)",
     "methodology": "Risk score = TVL exposure (0-40) + exploit history (0-40) + chain surface area (0-20)",
-    "generatedAt": "2026-03-09T05:13:13.489Z"
+    "generatedAt": "2026-03-09T05:16:26.893Z"
   },
   "summary": {
     "totalBridges": 80,
@@ -16,7 +16,7 @@
     "totalTVL": 36907279519.85996,
     "totalVolume24h": 214121205.5366639,
     "totalVolume7d": 1034845392.8166289,
-    "fetchedAt": "2026-03-09T05:13:13.489Z"
+    "fetchedAt": "2026-03-09T05:16:26.893Z"
   },
   "bridges": [
     {
