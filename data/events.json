@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2026-03-07T20:09:36.000Z",
+    "entities": "financial custodians",
+    "topic": "cyberattack",
+    "eventSummary": "The Qilin Ransomware group has listed Kuzco Lighting and Artemedica as its latest victims on its dark web leak portal.\nSources:\n- https://bsky.app/profile/falconfeedsio.bsky.social/post/3mgim7l6tj22l"
+  },
+  {
+    "timestamp": "2026-03-07T18:00:12.000Z",
+    "entities": "financial custodians",
+    "topic": "cyberattack",
+    "eventSummary": "A new ClickFix malware campaign is targeting users by tricking them into executing malicious PowerShell commands via Windows Terminal to deploy Lumma Stealer, a credential-harvesting malware.\nSources:\n- https://twitter.com/1665789406026842112/status/2030342767491129671"
+  },
+  {
+    "timestamp": "2026-03-07T16:51:11.000Z",
+    "entities": "financial custodians",
+    "topic": "cyberattack",
+    "eventSummary": "An autonomous open-source AI tool named CyberStrikeAI has reportedly breached over 600 Fortinet firewalls across 55 countries by automating the entire attack chain including reconnaissance and exploitation.\nSources:\n- https://twitter.com/1945909917031731200/status/2030325397850886403"
+  },
+  {
+    "timestamp": "2026-03-07T14:20:38.000Z",
+    "entities": "financial custodians",
+    "topic": "cyberattack",
+    "eventSummary": "Iran-linked hackers are targeting IP cameras across Israel and Gulf states to gather military intelligence and conduct shadow cyber operations amid reports of escalating regional conflict and missile attacks.\nSources:\n- https://twitter.com/128484298/status/2030287510262174021\n- https://twitter.com/128484298/status/2030297929378943394\n- https://twitter.com/4592195181/status/2030449535156191343"
+  }
+]
