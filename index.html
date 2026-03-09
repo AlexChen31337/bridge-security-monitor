@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<!-- 🌰 Bridge Security Monitor — cross-chain bridge intelligence dashboard -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌰 Bridge Security Monitor</title>
+  <meta name="description" content="Real-time cross-chain bridge security intelligence — risk scores, TVL exposure, exploit history, and AI-generated weekly briefs." />
+  <!-- 🌰 Open Graph for social sharing -->
+  <meta property="og:title" content="🌰 Bridge Security Monitor" />
+  <meta property="og:description" content="Cross-chain bridge security intelligence — tracking exploits, TVL at risk, and security trends." />
+  <meta property="og:type" content="website" />
+  <style>
+    /* ===========================
+     * 🌰 Base & Reset
+     * =========================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0e1a;
+      --surface: #111827;
+      --surface2: #1a2235;
+      --border: #1e2d45;
+      --text: #e2e8f0;
+      --text-muted: #8fa3bf;
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.15);
+      --critical: #ef4444;
+      --critical-bg: rgba(239, 68, 68, 0.1);
+      --high: #f97316;
+      --high-bg: rgba(249, 115, 22, 0.1);
+      --medium: #eab308;
+      --medium-bg: rgba(234, 179, 8, 0.1);
+      --low: #22c55e;
+      --low-bg: rgba(34, 197, 94, 0.1);
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 15px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ===========================
+     * 🌰 Layout
+     * =========================== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ===========================
+     * 🌰 Header
+     * =========================== */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 0;
+      background: linear-gradient(180deg, rgba(59,130,246,0.05) 0%, transparent 100%);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-icon { font-size: 2rem; }
+
+    .logo-text h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+
+    .logo-text p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .header-meta {
+      text-align: right;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      color: #22c55e;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .live-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #22c55e;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    /* ===========================
+     * 🌰 Stats Bar
+     * =========================== */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      padding: 1.5rem 0;
+    }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+      transition: border-color 0.2s;
+    }
+
+    .stat-card:hover { border-color: var(--accent); }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.4rem;
+    }
+
+    .stat-value {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1;
+    }
+
+    .stat-sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+
+    .stat-critical .stat-value { color: var(--critical); }
+    .stat-high .stat-value { color: var(--high); }
+
+    /* ===========================
+     * 🌰 Section headings
+     * =========================== */
+    .section { padding: 2rem 0; }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section-count {
+      font-size: 0.75rem;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      color: var(--text-muted);
+    }
+
+    /* ===========================
+     * 🌰 AI Report Card
+     * =========================== */
+    .report-card {
+      background: linear-gradient(135deg, var(--surface) 0%, var(--surface2) 100%);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .report-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .report-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      background: var(--accent-glow);
+      border: 1px solid var(--accent);
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .report-meta h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .report-meta p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .report-body {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      color: var(--text);
+      white-space: pre-wrap;
+    }
+
+    .report-loading {
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* ===========================
+     * 🌰 Bridge Table
+     * =========================== */
+    .bridges-grid {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .bridge-row {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1rem 1.25rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+      gap: 1rem;
+      align-items: center;
+      transition: border-color 0.2s, background 0.2s;
+      cursor: default;
+    }
+
+    .bridge-row:hover {
+      border-color: var(--accent);
+      background: var(--surface2);
+    }
+
+    .bridge-name {
+      font-weight: 600;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+
+    .bridge-chains {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .bridge-exploit-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      font-size: 0.7rem;
+      background: var(--critical-bg);
+      color: var(--critical);
+      border: 1px solid rgba(239,68,68,0.3);
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      margin-top: 0.25rem;
+    }
+
+    .bridge-col {
+      font-size: 0.85rem;
+    }
+
+    .bridge-col-label {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin-bottom: 0.2rem;
+    }
+
+    .bridge-col-value {
+      font-weight: 600;
+      color: #fff;
+    }
+
+    /* 🌰 Risk badge */
+    .risk-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    .risk-CRITICAL { background: var(--critical-bg); color: var(--critical); border: 1px solid rgba(239,68,68,0.3); }
+    .risk-HIGH     { background: var(--high-bg);     color: var(--high);     border: 1px solid rgba(249,115,22,0.3); }
+    .risk-MEDIUM   { background: var(--medium-bg);   color: var(--medium);   border: 1px solid rgba(234,179,8,0.3); }
+    .risk-LOW      { background: var(--low-bg);      color: var(--low);      border: 1px solid rgba(34,197,94,0.3); }
+
+    /* 🌰 Risk score bar */
+    .score-bar-wrap {
+      background: var(--border);
+      border-radius: 999px;
+      height: 6px;
+      margin-top: 0.3rem;
+      overflow: hidden;
+    }
+
+    .score-bar {
+      height: 100%;
+      border-radius: 999px;
+      transition: width 0.6s ease;
+    }
+
+    .score-bar-CRITICAL { background: var(--critical); }
+    .score-bar-HIGH     { background: var(--high); }
+    .score-bar-MEDIUM   { background: var(--medium); }
+    .score-bar-LOW      { background: var(--low); }
+
+    /* ===========================
+     * 🌰 Exploits Timeline
+     * =========================== */
+    .exploits-list { display: grid; gap: 1rem; }
+
+    .exploit-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--critical);
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .exploit-date {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+      padding-top: 0.1rem;
+    }
+
+    .exploit-name {
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 0.3rem;
+    }
+
+    .exploit-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .exploit-method {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+      font-style: italic;
+    }
+
+    .exploit-amount {
+      text-align: right;
+    }
+
+    .exploit-amount-value {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--critical);
+    }
+
+    .exploit-category {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    /* ===========================
+     * 🌰 Methodology
+     * =========================== */
+    .methodology {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+    }
+
+    .methodology h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .methodology-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .method-item {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      padding: 1rem;
+    }
+
+    .method-item h4 {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
+    .method-item p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ===========================
+     * 🌰 Footer
+     * =========================== */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* ===========================
+     * 🌰 Filters
+     * =========================== */
+    .filter-bar {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .filter-btn {
+      padding: 0.35rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .filter-btn:hover { border-color: var(--accent); color: var(--text); }
+    .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+    /* ===========================
+     * 🌰 Loading / Error States
+     * =========================== */
+    .loading-state {
+      text-align: center;
+      padding: 3rem;
+      color: var(--text-muted);
+    }
+
+    .error-state {
+      background: var(--critical-bg);
+      border: 1px solid rgba(239,68,68,0.3);
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+      color: var(--critical);
+      font-size: 0.85rem;
+    }
+
+    /* ===========================
+     * 🌰 Responsive
+     * =========================== */
+    @media (max-width: 768px) {
+      .bridge-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+      }
+      .bridge-col:nth-child(n+4) { display: none; }
+
+      .exploit-card {
+        grid-template-columns: 1fr auto;
+      }
+      .exploit-date { grid-column: 1 / -1; }
+
+      .header-meta { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      .bridge-row { grid-template-columns: 1fr; }
+      .bridge-col { display: block !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🌰 Header -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <div class="logo">
+        <div class="logo-icon">🌉</div>
+        <div class="logo-text">
+          <h1>🌰 Bridge Security Monitor</h1>
+          <p>Cross-chain bridge intelligence &amp; risk tracking</p>
+        </div>
+      </div>
+      <div class="header-meta">
+        <div class="live-badge">
+          <div class="live-dot"></div>
+          LIVE DATA
+        </div>
+        <div id="last-updated" style="margin-top:0.4rem">Loading...</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- 🌰 Stats Bar -->
+<div class="container">
+  <div class="stats-bar">
+    <div class="stat-card" id="stat-bridges">
+      <div class="stat-label">🌰 Bridges Monitored</div>
+      <div class="stat-value" id="stat-total">—</div>
+      <div class="stat-sub">Active cross-chain protocols</div>
+    </div>
+    <div class="stat-card stat-critical" id="stat-critical-card">
+      <div class="stat-label">⚠️ Critical Risk</div>
+      <div class="stat-value" id="stat-critical">—</div>
+      <div class="stat-sub">Risk score ≥ 70</div>
+    </div>
+    <div class="stat-card stat-high">
+      <div class="stat-label">🔶 High Risk</div>
+      <div class="stat-value" id="stat-high">—</div>
+      <div class="stat-sub">Risk score 50–69</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">💰 24h Volume</div>
+      <div class="stat-value" id="stat-vol24">—</div>
+      <div class="stat-sub">Total cross-chain flow</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">📅 7d Volume</div>
+      <div class="stat-value" id="stat-vol7d">—</div>
+      <div class="stat-sub">Weekly bridge activity</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">💸 Historical Losses</div>
+      <div class="stat-value" style="color:#ef4444">$2.85B</div>
+      <div class="stat-sub">10 recorded exploits</div>
+    </div>
+  </div>
+</div>
+
+<!-- 🌰 AI Report -->
+<div class="container">
+  <div class="section">
+    <div class="section-header">
+      <div class="section-title">🤖 AI Intelligence Brief</div>
+      <div id="report-model" class="section-count">GitHub Models · gpt-4o-mini</div>
+    </div>
+    <div class="report-card">
+      <div class="report-header">
+        <div class="report-icon">🔍</div>
+        <div class="report-meta">
+          <h2>Weekly Bridge Security Analysis</h2>
+          <p id="report-date">Loading report...</p>
+        </div>
+      </div>
+      <div class="report-body" id="report-body">
+        <span class="report-loading">⏳ Loading AI-generated intelligence brief...</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🌰 Bridge Risk Table -->
+<div class="container">
+  <div class="section">
+    <div class="section-header">
+      <div class="section-title">🌉 Bridge Risk Scores</div>
+      <span class="section-count" id="bridge-count">Loading...</span>
+    </div>
+
+    <!-- 🌰 Filter buttons -->
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterBridges('ALL')">All</button>
+      <button class="filter-btn" onclick="filterBridges('CRITICAL')">⚠️ Critical</button>
+      <button class="filter-btn" onclick="filterBridges('HIGH')">🔶 High</button>
+      <button class="filter-btn" onclick="filterBridges('MEDIUM')">🟡 Medium</button>
+      <button class="filter-btn" onclick="filterBridges('LOW')">🟢 Low</button>
+      <button class="filter-btn" onclick="filterBridges('EXPLOITED')">💀 Previously Exploited</button>
+    </div>
+
+    <!-- 🌰 Table header -->
+    <div class="bridge-row" style="background:var(--surface2);font-size:0.72rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:0.04em;">
+      <div>Bridge</div>
+      <div>Risk Level</div>
+      <div>Risk Score</div>
+      <div>7d Volume</div>
+      <div>Chains</div>
+    </div>
+
+    <div id="bridges-grid" class="bridges-grid">
+      <div class="loading-state">⏳ Loading bridge data...</div>
+    </div>
+  </div>
+</div>
+
+<!-- 🌰 Exploit History -->
+<div class="container">
+  <div class="section">
+    <div class="section-header">
+      <div class="section-title">💀 Historical Bridge Exploits</div>
+      <span class="section-count" id="exploit-count">Loading...</span>
+    </div>
+    <div id="exploits-list" class="exploits-list">
+      <div class="loading-state">⏳ Loading exploit data...</div>
+    </div>
+  </div>
+</div>
+
+<!-- 🌰 Methodology -->
+<div class="container">
+  <div class="section">
+    <div class="section-header">
+      <div class="section-title">📐 Risk Scoring Methodology</div>
+    </div>
+    <div class="methodology">
+      <h3>🌰 How We Score Bridge Risk</h3>
+      <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;">
+        Risk scores (0–100) combine three weighted factors reflecting real-world attack economics.
+      </p>
+      <div class="methodology-grid">
+        <div class="method-item">
+          <h4>💰 TVL / Volume Exposure (0–40 pts)</h4>
+          <p>Higher volume = more attractive target. Bridges processing >$1B weekly score maximum. Historical data shows exploit size correlates strongly with available TVL.</p>
+        </div>
+        <div class="method-item">
+          <h4>💀 Exploit History (0–40 pts)</h4>
+          <p>Bridges with prior exploits receive a 40-point penalty. Attackers target previously compromised protocols — they know the architecture and residual vulnerabilities.</p>
+        </div>
+        <div class="method-item">
+          <h4>🌐 Chain Surface Area (0–20 pts)</h4>
+          <p>Each chain integration adds smart contract risk, relayer trust assumptions, and validation gaps. Bridges on 10+ chains score maximum surface-area risk.</p>
+        </div>
+        <div class="method-item">
+          <h4>📊 Thresholds</h4>
+          <p>
+            <strong style="color:var(--critical)">CRITICAL</strong> ≥ 70 pts<br/>
+            <strong style="color:var(--high)">HIGH</strong> 50–69 pts<br/>
+            <strong style="color:var(--medium)">MEDIUM</strong> 30–49 pts<br/>
+            <strong style="color:var(--low)">LOW</strong> &lt; 30 pts
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🌰 Footer -->
+<footer>
+  <div class="container">
+    <p>
+      🌰 Bridge Security Monitor &nbsp;·&nbsp;
+      Data: <a href="https://bridges.llama.fi" target="_blank" rel="noopener">DeFiLlama Bridges API</a> &nbsp;·&nbsp;
+      AI: <a href="https://github.com/marketplace/models" target="_blank" rel="noopener">GitHub Models</a> &nbsp;·&nbsp;
+      <a href="https://github.com/AlexChen31337/bridge-security-monitor" target="_blank" rel="noopener">Source Code</a>
+    </p>
+    <p style="margin-top:0.4rem">
+      Updated weekly via GitHub Actions &nbsp;·&nbsp; Not financial advice &nbsp;·&nbsp; 
+      Methodology: TVL exposure + exploit history + chain surface area
+    </p>
+  </div>
+</footer>
+
+<script>
+// 🌰 Bridge Security Monitor — Dashboard Logic
+
+const RISK_COLORS = {
+  CRITICAL: '#ef4444',
+  HIGH: '#f97316',
+  MEDIUM: '#eab308',
+  LOW: '#22c55e'
+};
+
+let allBridges = [];
+let currentFilter = 'ALL';
+
+// 🌰 Format USD
+function fmtUSD(n) {
+  if (!n || isNaN(n)) return '$0';
+  if (n >= 1e9) return '$' + (n / 1e9).toFixed(1) + 'B';
+  if (n >= 1e6) return '$' + (n / 1e6).toFixed(0) + 'M';
+  if (n >= 1e3) return '$' + (n / 1e3).toFixed(0) + 'K';
+  return '$' + n.toFixed(0);
+}
+
+// 🌰 Format date
+function fmtDate(iso) {
+  if (!iso) return '—';
+  return new Date(iso).toLocaleString('en-AU', {
+    day: 'numeric', month: 'short', year: 'numeric',
+    hour: '2-digit', minute: '2-digit'
+  });
+}
+
+// 🌰 Render a single bridge row
+function renderBridgeRow(b) {
+  const exploitBadge = b.exploitHistory && b.exploitHistory.found
+    ? '<div class="bridge-exploit-badge">⚠️ Previously Exploited</div>'
+    : '';
+
+  return `
+    <div class="bridge-row" data-risk="${b.riskLevel}" data-exploited="${b.exploitHistory && b.exploitHistory.found ? 'true' : 'false'}">
+      <div>
+        <div class="bridge-name">${escHtml(b.name || b.slug || 'Unknown')}</div>
+        <div class="bridge-chains">${b.chainCount} chain${b.chainCount !== 1 ? 's' : ''}</div>
+        ${exploitBadge}
+      </div>
+      <div class="bridge-col">
+        <span class="risk-badge risk-${b.riskLevel}">${b.riskLevel}</span>
+      </div>
+      <div class="bridge-col">
+        <div class="bridge-col-value">${b.riskScore}/100</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar score-bar-${b.riskLevel}" style="width:${b.riskScore}%"></div>
+        </div>
+      </div>
+      <div class="bridge-col">
+        <div class="bridge-col-label">7-day volume</div>
+        <div class="bridge-col-value">${fmtUSD(b.volume7d)}</div>
+      </div>
+      <div class="bridge-col">
+        <div class="bridge-col-label">Chains</div>
+        <div class="bridge-col-value">${b.chainCount}</div>
+      </div>
+    </div>
+  `;
+}
+
+// 🌰 Escape HTML to prevent XSS
+function escHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+// 🌰 Filter bridge list
+function filterBridges(level) {
+  currentFilter = level;
+  document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+
+  const grid = document.getElementById('bridges-grid');
+  let filtered = allBridges;
+
+  if (level === 'EXPLOITED') {
+    filtered = allBridges.filter(b => b.exploitHistory && b.exploitHistory.found);
+  } else if (level !== 'ALL') {
+    filtered = allBridges.filter(b => b.riskLevel === level);
+  }
+
+  document.getElementById('bridge-count').textContent = `${filtered.length} bridges`;
+  grid.innerHTML = filtered.length > 0
+    ? filtered.map(renderBridgeRow).join('')
+    : '<div class="loading-state">No bridges match this filter.</div>';
+}
+
+// 🌰 Render exploit card
+function renderExploit(e) {
+  const severity = e.severity === 'critical' ? 'var(--critical)' : 'var(--high)';
+  return `
+    <div class="exploit-card" style="border-left-color:${severity}">
+      <div class="exploit-date">${e.date}</div>
+      <div>
+        <div class="exploit-name">${escHtml(e.name)}</div>
+        <div class="exploit-meta">${escHtml(e.chain)} &nbsp;·&nbsp; ${escHtml(e.category)}</div>
+        <div class="exploit-method">${escHtml(e.method)}</div>
+        <div class="exploit-meta" style="margin-top:0.3rem;color:var(--text)">${escHtml(e.description)}</div>
+      </div>
+      <div class="exploit-amount">
+        <div class="exploit-amount-value">${escHtml(e.amountDisplay)}</div>
+        <div class="exploit-category">${escHtml(e.category)}</div>
+        <div class="exploit-category" style="margin-top:0.2rem;color:${e.status.includes('recovered') || e.status.includes('returned') ? '#22c55e' : 'var(--critical)'}">
+          ${escHtml(e.status)}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// 🌰 Load bridge data
+async function loadBridges() {
+  try {
+    const res = await fetch('data/bridges.json?v=' + Date.now());
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+
+    const { summary, bridges, meta } = data;
+    allBridges = bridges;
+
+    // Update stats
+    document.getElementById('stat-total').textContent = summary.totalBridges;
+    document.getElementById('stat-critical').textContent = summary.byRiskLevel.CRITICAL;
+    document.getElementById('stat-high').textContent = summary.byRiskLevel.HIGH;
+    document.getElementById('stat-vol24').textContent = fmtUSD(summary.totalVolume24h);
+    document.getElementById('stat-vol7d').textContent = fmtUSD(summary.totalVolume7d);
+    document.getElementById('last-updated').textContent = 'Updated: ' + fmtDate(meta.generatedAt);
+    document.getElementById('bridge-count').textContent = `${bridges.length} bridges`;
+
+    // Render bridges
+    const grid = document.getElementById('bridges-grid');
+    grid.innerHTML = bridges.map(renderBridgeRow).join('');
+
+  } catch (err) {
+    document.getElementById('bridges-grid').innerHTML =
+      `<div class="error-state">⚠️ Failed to load bridge data: ${escHtml(err.message)}<br/>Bridge data updates weekly via GitHub Actions.</div>`;
+    console.error('🌰 Bridge data error:', err);
+  }
+}
+
+// 🌰 Load exploit data
+async function loadExploits() {
+  try {
+    const res = await fetch('data/exploits.json');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+
+    const exploits = data.exploits.sort((a, b) => new Date(b.date) - new Date(a.date));
+    document.getElementById('exploit-count').textContent = `${exploits.length} incidents · $${(data.meta.totalLost / 1e9).toFixed(1)}B total`;
+    document.getElementById('exploits-list').innerHTML = exploits.map(renderExploit).join('');
+
+  } catch (err) {
+    document.getElementById('exploits-list').innerHTML =
+      `<div class="error-state">⚠️ Failed to load exploit data: ${escHtml(err.message)}</div>`;
+  }
+}
+
+// 🌰 Load AI report
+async function loadReport() {
+  try {
+    const res = await fetch('data/report.json?v=' + Date.now());
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+
+    document.getElementById('report-date').textContent =
+      'Generated: ' + fmtDate(data.meta.generatedAt) + ' · Model: ' + data.meta.model;
+    document.getElementById('report-body').textContent = data.report;
+    document.getElementById('report-model').textContent =
+      'GitHub Models · ' + data.meta.model;
+
+  } catch (err) {
+    document.getElementById('report-body').innerHTML =
+      '<span class="report-loading">Report generation in progress — check back after next weekly update.</span>';
+    console.log('🌰 Report not yet available (first deployment)');
+  }
+}
+
+// 🌰 Bootstrap on page load
+document.addEventListener('DOMContentLoaded', () => {
+  loadBridges();
+  loadExploits();
+  loadReport();
+});
+</script>
+
+</body>
+</html>

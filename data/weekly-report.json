@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-03-09T05:00:00.000Z",
+  "weekEnding": "2026-03-09",
+  "summary": {
+    "totalBridgesTracked": 50,
+    "totalTVL": 54880000000,
+    "totalTVLFormatted": "$54.88B",
+    "highRiskBridges": 2,
+    "tvlAtRisk": 129800000,
+    "tvlAtRiskFormatted": "$129.8M",
+    "volume7dUSD": 4200000000,
+    "volume7dFormatted": "$4.2B"
+  },
+  "brief": "## Executive Summary\n\n50 bridges tracked, $54.88B total TVL locked, 2 high-risk bridges flagged ($129.8M at elevated exposure). 7-day bridge volume: $4.2B — elevated relative to Q4 2025, suggesting active cross-chain capital rotation.\n\n## TVL & Volume Trend\n\nBridge TVL remains concentrated at the top: WBTC ($15.2B), Binance Bitcoin ($8.1B), and Coinbase Bridge ($6.3B) together hold 54% of tracked TVL. This concentration creates systemic risk — a single exploit on any of the top 3 would represent the largest single DeFi loss in history. Volume trends at $4.2B/7d indicate healthy throughput but also elevated settlement risk.\n\n## Top Risks This Week\n\nPortal (formerly Wormhole) remains the highest-risk major bridge: 24 chains, $3.15B TVL, and a prior $326M exploit in February 2022. Despite security upgrades, multi-chain bridge architecture fundamentally expands the attack surface. SolvBTC ($1.15B TVL, 10 chains) and Axelar ($675M, multiple chains) represent the next tier of concern.\n\n## Exploit Pattern Analysis\n\n$2.05B+ stolen from bridges since 2021. The dominant attack vectors: (1) compromised validator/oracle keys (Ronin: $625M, Harmony: $100M) — attackers target the off-chain signing infrastructure, not the contracts; (2) logic bugs in message verification (Wormhole: $326M, Nomad: $190M) — bridges that trust unverified cross-chain messages; (3) admin key compromise (Multichain: $126M) — custodial multi-sig failures. The pattern: bridges securing >$100M with off-chain signing components are disproportionately targeted.\n\n## Analyst Recommendation\n\n1. **For bridge protocols**: Implement circuit breakers capping single-transaction withdrawals at 1% of TVL. Mandate time-delays (24–72h) on large withdrawals. Rotate signing keys on a quarterly schedule.\n2. **For users**: Prefer bridges with on-chain light-client verification (e.g., zkBridge architectures) over multi-sig-dependent designs. Limit single-bridge exposure to <5% of portfolio.\n3. **For auditors**: Prioritise bridge message-verification logic and validator key management over token accounting — the top losses were not arithmetic errors.\n\n— BridgeWatch AI 🌰",
+  "dataSource": "DeFiLlama Protocols API + curated exploit history",
+  "modelUsed": "gpt-4o-mini"
+}

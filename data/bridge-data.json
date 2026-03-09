@@ -1,0 +1,1009 @@
+{
+  "generatedAt": "2026-03-09T05:12:01.593Z",
+  "summary": {
+    "totalBridgesTracked": 60,
+    "totalTVL": 54992323363.50334,
+    "totalTVLFormatted": "$54.99B",
+    "highRiskBridges": 3,
+    "tvlAtRisk": 142990304.79748392,
+    "tvlAtRiskFormatted": "$143.0M",
+    "volume7dUSD": 0,
+    "volume7dFormatted": "N/A"
+  },
+  "bridges": [
+    {
+      "id": "wbtc",
+      "name": "WBTC",
+      "tvlUSD": 15210957676.19381,
+      "tvlFormatted": "$15.21B",
+      "chains": [
+        "Bitcoin"
+      ],
+      "chainCount": 1,
+      "riskScore": 3,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "binance-bitcoin",
+      "name": "Binance Bitcoin",
+      "tvlUSD": 8053875181.399412,
+      "tvlFormatted": "$8.05B",
+      "chains": [
+        "Bitcoin"
+      ],
+      "chainCount": 1,
+      "riskScore": 3,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "coinbase-bridge",
+      "name": "Coinbase Bridge",
+      "tvlUSD": 6256769015.178947,
+      "tvlFormatted": "$6.26B",
+      "chains": [
+        "Litecoin",
+        "Cardano",
+        "Doge",
+        "XRPL",
+        "Bitcoin"
+      ],
+      "chainCount": 5,
+      "riskScore": 4,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "hyperliquid-bridge",
+      "name": "Hyperliquid Bridge",
+      "tvlUSD": 4884697882.347198,
+      "tvlFormatted": "$4.88B",
+      "chains": [
+        "Arbitrum"
+      ],
+      "chainCount": 1,
+      "riskScore": 3,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "justcryptos",
+      "name": "JustCryptos",
+      "tvlUSD": 4105971768,
+      "tvlFormatted": "$4.11B",
+      "chains": [
+        "Tron"
+      ],
+      "chainCount": 1,
+      "riskScore": 3,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "portal",
+      "name": "Portal",
+      "tvlUSD": 3150274674.5721755,
+      "tvlFormatted": "$3.15B",
+      "chains": [
+        "OP Mainnet",
+        "Karura",
+        "Kaia",
+        "BSC",
+        "Ethereum",
+        "Oasis Emerald",
+        "Avalanche",
+        "Celo"
+      ],
+      "chainCount": 24,
+      "riskScore": 5,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "function-fbtc",
+      "name": "Function FBTC",
+      "tvlUSD": 1516775302.0928135,
+      "tvlFormatted": "$1.52B",
+      "chains": [
+        "Bitcoin"
+      ],
+      "chainCount": 1,
+      "riskScore": 3,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "usdt0",
+      "name": "USDT0",
+      "tvlUSD": 1436050448.439961,
+      "tvlFormatted": "$1.44B",
+      "chains": [
+        "Ethereum"
+      ],
+      "chainCount": 1,
+      "riskScore": 3,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "solvbtc",
+      "name": "SolvBTC",
+      "tvlUSD": 1152572564.879643,
+      "tvlFormatted": "$1.15B",
+      "chains": [
+        "Mantle",
+        "Base",
+        "BSC",
+        "Ethereum",
+        "Merlin",
+        "BOB",
+        "Avalanche",
+        "Polygon"
+      ],
+      "chainCount": 10,
+      "riskScore": 5,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "merlins-seal",
+      "name": "Merlins Seal",
+      "tvlUSD": 749654145.9007812,
+      "tvlFormatted": "$749.7M",
+      "chains": [
+        "Ethereum",
+        "Arbitrum",
+        "Zkfair",
+        "Bitcoin"
+      ],
+      "chainCount": 4,
+      "riskScore": 4,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "axelar-cross-chain",
+      "name": "Axelar Cross Chain",
+      "tvlUSD": 674965280.9263452,
+      "tvlFormatted": "$675.0M",
+      "chains": [
+        "BSC",
+        "Ethereum",
+        "Arbitrum"
+      ],
+      "chainCount": 3,
+      "riskScore": 4,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "unit",
+      "name": "Unit",
+      "tvlUSD": 668712827.1409007,
+      "tvlFormatted": "$668.7M",
+      "chains": [
+        "Ethereum",
+        "Solana",
+        "Bitcoin"
+      ],
+      "chainCount": 3,
+      "riskScore": 4,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "unirouter",
+      "name": "UniRouter",
+      "tvlUSD": 661507880.0949209,
+      "tvlFormatted": "$661.5M",
+      "chains": [
+        "BSquared"
+      ],
+      "chainCount": 1,
+      "riskScore": 3,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "free-protocol",
+      "name": "Free Protocol",
+      "tvlUSD": 659466668.6104486,
+      "tvlFormatted": "$659.5M",
+      "chains": [
+        "Hemi",
+        "Manta",
+        "BSC",
+        "Ethereum",
+        "Merlin",
+        "Kroma",
+        "Polygon",
+        "Arbitrum"
+      ],
+      "chainCount": 8,
+      "riskScore": 5,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "stacks-sbtc",
+      "name": "Stacks sBTC",
+      "tvlUSD": 592057372.0415787,
+      "tvlFormatted": "$592.1M",
+      "chains": [
+        "Bitcoin"
+      ],
+      "chainCount": 1,
+      "riskScore": 3,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "core-bitcoin-bridge",
+      "name": "Core Bitcoin Bridge",
+      "tvlUSD": 584205098.3236712,
+      "tvlFormatted": "$584.2M",
+      "chains": [
+        "Bitcoin"
+      ],
+      "chainCount": 1,
+      "riskScore": 3,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "exsat-staking-btc",
+      "name": "exSat Staking BTC",
+      "tvlUSD": 497846580.1391099,
+      "tvlFormatted": "$497.8M",
+      "chains": [
+        "Bitcoin"
+      ],
+      "chainCount": 1,
+      "riskScore": 2,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "bitlayer-bridge",
+      "name": "Bitlayer Bridge",
+      "tvlUSD": 478937690.5804326,
+      "tvlFormatted": "$478.9M",
+      "chains": [
+        "Ethereum",
+        "Bitcoin"
+      ],
+      "chainCount": 2,
+      "riskScore": 2,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "nexus-btc",
+      "name": "Nexus BTC",
+      "tvlUSD": 405157964.7579173,
+      "tvlFormatted": "$405.2M",
+      "chains": [
+        "Bitcoin"
+      ],
+      "chainCount": 1,
+      "riskScore": 2,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "pumpbtc",
+      "name": "PumpBTC",
+      "tvlUSD": 381342723.4990118,
+      "tvlFormatted": "$381.3M",
+      "chains": [
+        "Mantle",
+        "Morph",
+        "Base",
+        "BSC",
+        "Ethereum",
+        "Sei",
+        "BOB",
+        "Arbitrum"
+      ],
+      "chainCount": 9,
+      "riskScore": 4,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "echo-bridge",
+      "name": "Echo Bridge",
+      "tvlUSD": 358823427.29838073,
+      "tvlFormatted": "$358.8M",
+      "chains": [
+        "BSquared"
+      ],
+      "chainCount": 1,
+      "riskScore": 2,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "axelar",
+      "name": "Axelar",
+      "tvlUSD": 340516632.2409439,
+      "tvlFormatted": "$340.5M",
+      "chains": [
+        "OP Mainnet",
+        "Juno",
+        "BSC",
+        "Secret",
+        "Neutron",
+        "Avalanche",
+        "Arbitrum",
+        "Migaloo"
+      ],
+      "chainCount": 44,
+      "riskScore": 4,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "bouncebit-staking",
+      "name": "BounceBit Staking",
+      "tvlUSD": 277511634.2137572,
+      "tvlFormatted": "$277.5M",
+      "chains": [
+        "BounceBit"
+      ],
+      "chainCount": 1,
+      "riskScore": 2,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "lorenzo-enzobtc",
+      "name": "Lorenzo enzoBTC",
+      "tvlUSD": 204302473.86345732,
+      "tvlFormatted": "$204.3M",
+      "chains": [
+        "Bitcoin"
+      ],
+      "chainCount": 1,
+      "riskScore": 2,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "coffer-network",
+      "name": "Coffer Network",
+      "tvlUSD": 190200042.05139443,
+      "tvlFormatted": "$190.2M",
+      "chains": [
+        "Bitcoin"
+      ],
+      "chainCount": 1,
+      "riskScore": 2,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "ibc",
+      "name": "IBC",
+      "tvlUSD": 143555378.5417353,
+      "tvlFormatted": "$143.6M",
+      "chains": [
+        "CosmosHub"
+      ],
+      "chainCount": 1,
+      "riskScore": 2,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "connext",
+      "name": "Connext",
+      "tvlUSD": 139548865.47094202,
+      "tvlFormatted": "$139.5M",
+      "chains": [
+        "OP Mainnet",
+        "Metis",
+        "Moonriver",
+        "Harmony",
+        "BSC",
+        "Ethereum",
+        "Gnosis",
+        "Linea"
+      ],
+      "chainCount": 20,
+      "riskScore": 4,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "obeliskbtc",
+      "name": "ObeliskBTC",
+      "tvlUSD": 121191310.2523353,
+      "tvlFormatted": "$121.2M",
+      "chains": [
+        "Bitcoin"
+      ],
+      "chainCount": 1,
+      "riskScore": 2,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "tzbtc",
+      "name": "tzBTC",
+      "tvlUSD": 94382745.59977068,
+      "tvlFormatted": "$94.4M",
+      "chains": [
+        "Bitcoin"
+      ],
+      "chainCount": 1,
+      "riskScore": 1,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "multichain",
+      "name": "Multichain",
+      "tvlUSD": 93141948.82339332,
+      "tvlFormatted": "$93.1M",
+      "chains": [
+        "OP Mainnet",
+        "DFK",
+        "Cube",
+        "Harmony",
+        "ThunderCore",
+        "CLV",
+        "BSC",
+        "Dogechain"
+      ],
+      "chainCount": 54,
+      "riskScore": 6,
+      "exploited": true,
+      "url": null
+    },
+    {
+      "id": "kraken-bitcoin",
+      "name": "Kraken Bitcoin",
+      "tvlUSD": 76819113.70984033,
+      "tvlFormatted": "$76.8M",
+      "chains": [
+        "Bitcoin"
+      ],
+      "chainCount": 1,
+      "riskScore": 1,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "mezo-network",
+      "name": "Mezo Network",
+      "tvlUSD": 73512549.32684341,
+      "tvlFormatted": "$73.5M",
+      "chains": [
+        "Ethereum"
+      ],
+      "chainCount": 1,
+      "riskScore": 1,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "cbridge",
+      "name": "cBridge",
+      "tvlUSD": 68187181.77056631,
+      "tvlFormatted": "$68.2M",
+      "chains": [
+        "OP Mainnet",
+        "Metis",
+        "Scroll",
+        "Moonriver",
+        "Harmony",
+        "CLV",
+        "BSC",
+        "Ethereum"
+      ],
+      "chainCount": 29,
+      "riskScore": 3,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "exsat-bridge",
+      "name": "exSat Bridge",
+      "tvlUSD": 62543636.85796013,
+      "tvlFormatted": "$62.5M",
+      "chains": [
+        "Bitcoin"
+      ],
+      "chainCount": 1,
+      "riskScore": 1,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "wrapped",
+      "name": "Wrapped",
+      "tvlUSD": 57293694.85445382,
+      "tvlFormatted": "$57.3M",
+      "chains": [
+        "Ethereum",
+        "Celo",
+        "XRPL"
+      ],
+      "chainCount": 3,
+      "riskScore": 2,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "bob-bridge",
+      "name": "BOB Bridge",
+      "tvlUSD": 46385367.39091277,
+      "tvlFormatted": "$46.4M",
+      "chains": [
+        "Ethereum"
+      ],
+      "chainCount": 1,
+      "riskScore": 1,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "poly-network",
+      "name": "Poly Network",
+      "tvlUSD": 44728247.74000001,
+      "tvlFormatted": "$44.7M",
+      "chains": [
+        "OP Mainnet",
+        "Metis",
+        "Kava",
+        "Dexit",
+        "Ontology",
+        "Harmony",
+        "Carbon",
+        "CLV"
+      ],
+      "chainCount": 31,
+      "riskScore": 3,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "sygma",
+      "name": "Sygma",
+      "tvlUSD": 43438348.972162895,
+      "tvlFormatted": "$43.4M",
+      "chains": [
+        "Ethereum"
+      ],
+      "chainCount": 1,
+      "riskScore": 1,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "fuel-bridge",
+      "name": "Fuel Bridge",
+      "tvlUSD": 41605581.9504596,
+      "tvlFormatted": "$41.6M",
+      "chains": [
+        "Ethereum"
+      ],
+      "chainCount": 1,
+      "riskScore": 1,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "orbit-bridge",
+      "name": "Orbit Bridge",
+      "tvlUSD": 36644889.80383023,
+      "tvlFormatted": "$36.6M",
+      "chains": [
+        "Silicon zkEVM",
+        "Meta",
+        "Kaia",
+        "TON",
+        "BSC",
+        "Ethereum",
+        "Heco",
+        "Polygon"
+      ],
+      "chainCount": 11,
+      "riskScore": 6,
+      "exploited": true,
+      "url": null
+    },
+    {
+      "id": "proxy",
+      "name": "Proxy",
+      "tvlUSD": 30802116.839438383,
+      "tvlFormatted": "$30.8M",
+      "chains": [
+        "Ethereum",
+        "Polygon"
+      ],
+      "chainCount": 2,
+      "riskScore": 1,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "gravity-bridge",
+      "name": "Gravity Bridge",
+      "tvlUSD": 28044695.197097536,
+      "tvlFormatted": "$28.0M",
+      "chains": [
+        "Ethereum",
+        "GravityBridge"
+      ],
+      "chainCount": 2,
+      "riskScore": 1,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "injective-bridge",
+      "name": "Injective Bridge",
+      "tvlUSD": 27086033.349797342,
+      "tvlFormatted": "$27.1M",
+      "chains": [
+        "Ethereum"
+      ],
+      "chainCount": 1,
+      "riskScore": 1,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "allbridge-classic",
+      "name": "Allbridge Classic",
+      "tvlUSD": 27036778.46418876,
+      "tvlFormatted": "$27.0M",
+      "chains": [
+        "Harmony",
+        "BSC",
+        "Ethereum",
+        "Avalanche",
+        "Celo",
+        "XRPL",
+        "Fuse",
+        "Fantom"
+      ],
+      "chainCount": 13,
+      "riskScore": 3,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "morph-bridge",
+      "name": "Morph Bridge",
+      "tvlUSD": 26046848.181490183,
+      "tvlFormatted": "$26.0M",
+      "chains": [
+        "Ethereum"
+      ],
+      "chainCount": 1,
+      "riskScore": 1,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "iotube",
+      "name": "ioTube",
+      "tvlUSD": 24014762.260997377,
+      "tvlFormatted": "$24.0M",
+      "chains": [
+        "BSC",
+        "IoTeX",
+        "Ethereum",
+        "Polygon"
+      ],
+      "chainCount": 4,
+      "riskScore": 2,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "octus-bridge",
+      "name": "Octus Bridge",
+      "tvlUSD": 23273670.04348986,
+      "tvlFormatted": "$23.3M",
+      "chains": [
+        "Milkomeda C1",
+        "BSC",
+        "Ethereum",
+        "Avalanche",
+        "Polygon",
+        "Fantom",
+        "Everscale"
+      ],
+      "chainCount": 7,
+      "riskScore": 3,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "allbridge-core",
+      "name": "Allbridge Core",
+      "tvlUSD": 23031125.87564623,
+      "tvlFormatted": "$23.0M",
+      "chains": [
+        "OP Mainnet",
+        "Sui",
+        "Base",
+        "BSC",
+        "Ethereum",
+        "Stellar",
+        "Avalanche",
+        "Polygon"
+      ],
+      "chainCount": 12,
+      "riskScore": 3,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "universal-bridge",
+      "name": "Universal Bridge",
+      "tvlUSD": 21151302.489999983,
+      "tvlFormatted": "$21.2M",
+      "chains": [
+        "Ethereum"
+      ],
+      "chainCount": 1,
+      "riskScore": 1,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "hatom-tao-bridge",
+      "name": "Hatom TAO Bridge",
+      "tvlUSD": 18122345.980149884,
+      "tvlFormatted": "$18.1M",
+      "chains": [
+        "Bittensor"
+      ],
+      "chainCount": 1,
+      "riskScore": 1,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "wan-bridge",
+      "name": "Wan Bridge",
+      "tvlUSD": 17371543.975457933,
+      "tvlFormatted": "$17.4M",
+      "chains": [
+        "OP Mainnet",
+        "Wanchain",
+        "Metis",
+        "Songbird",
+        "Energi",
+        "Moonriver",
+        "Odyssey",
+        "BSC"
+      ],
+      "chainCount": 36,
+      "riskScore": 3,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "dexalot-portfolio",
+      "name": "Dexalot Portfolio",
+      "tvlUSD": 16338761.305846035,
+      "tvlFormatted": "$16.3M",
+      "chains": [
+        "Avalanche",
+        "Arbitrum",
+        "Base"
+      ],
+      "chainCount": 3,
+      "riskScore": 2,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "debridge",
+      "name": "deBridge",
+      "tvlUSD": 13203466.170260366,
+      "tvlFormatted": "$13.2M",
+      "chains": [
+        "BSC",
+        "Ethereum",
+        "Sei",
+        "Heco",
+        "Polygon",
+        "Arbitrum"
+      ],
+      "chainCount": 6,
+      "riskScore": 6,
+      "exploited": true,
+      "url": null
+    },
+    {
+      "id": "pnetwork",
+      "name": "pNetwork",
+      "tvlUSD": 13099805.903342,
+      "tvlFormatted": "$13.1M",
+      "chains": [
+        "Vaulta",
+        "BSC",
+        "Ethereum",
+        "Gnosis",
+        "Ultra",
+        "Algorand",
+        "Polygon",
+        "Telos"
+      ],
+      "chainCount": 9,
+      "riskScore": 3,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "endurance-bridge",
+      "name": "Endurance Bridge",
+      "tvlUSD": 11015420.152658729,
+      "tvlFormatted": "$11.0M",
+      "chains": [
+        "Endurance"
+      ],
+      "chainCount": 1,
+      "riskScore": 1,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "rosen-bridge",
+      "name": "Rosen Bridge",
+      "tvlUSD": 9105380.308484826,
+      "tvlFormatted": "$9.1M",
+      "chains": [
+        "Ergo",
+        "BSC",
+        "Ethereum",
+        "Cardano",
+        "Bitcoin"
+      ],
+      "chainCount": 5,
+      "riskScore": 1,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "venombridge",
+      "name": "VenomBridge",
+      "tvlUSD": 8249412.325421132,
+      "tvlFormatted": "$8.2M",
+      "chains": [
+        "BSC",
+        "Ethereum",
+        "Avalanche",
+        "Polygon",
+        "Venom",
+        "Fantom"
+      ],
+      "chainCount": 6,
+      "riskScore": 2,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "wrapped-bnb",
+      "name": "Wrapped BNB",
+      "tvlUSD": 7301804.468887044,
+      "tvlFormatted": "$7.3M",
+      "chains": [
+        "BSC"
+      ],
+      "chainCount": 1,
+      "riskScore": 0,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "xlink",
+      "name": "XLink",
+      "tvlUSD": 6298007.340538248,
+      "tvlFormatted": "$6.3M",
+      "chains": [
+        "BSC",
+        "BSquared",
+        "Ethereum",
+        "Stacks",
+        "Bitcoin"
+      ],
+      "chainCount": 5,
+      "riskScore": 1,
+      "exploited": false,
+      "url": null
+    },
+    {
+      "id": "hashport",
+      "name": "Hashport",
+      "tvlUSD": 5598267.017948007,
+      "tvlFormatted": "$5.6M",
+      "chains": [
+        "OP Mainnet",
+        "Cronos",
+        "Base",
+        "Moonbeam",
+        "BSC",
+        "Ethereum",
+        "Hedera",
+        "Aurora"
+      ],
+      "chainCount": 12,
+      "riskScore": 2,
+      "exploited": false,
+      "url": null
+    }
+  ],
+  "exploitHistory": [
+    {
+      "name": "Ronin Bridge",
+      "date": "2022-03-23",
+      "lossUSD": 625000000,
+      "chain": "Ethereum/Ronin"
+    },
+    {
+      "name": "BNB Bridge",
+      "date": "2022-10-07",
+      "lossUSD": 586000000,
+      "chain": "BNB Chain"
+    },
+    {
+      "name": "Wormhole",
+      "date": "2022-02-02",
+      "lossUSD": 326000000,
+      "chain": "Ethereum/Solana"
+    },
+    {
+      "name": "Nomad Bridge",
+      "date": "2022-08-01",
+      "lossUSD": 190000000,
+      "chain": "Multi-chain"
+    },
+    {
+      "name": "Multichain (AnySwap)",
+      "date": "2023-07-07",
+      "lossUSD": 126000000,
+      "chain": "Multi-chain"
+    },
+    {
+      "name": "Harmony Horizon",
+      "date": "2022-06-24",
+      "lossUSD": 100000000,
+      "chain": "Harmony/Ethereum"
+    },
+    {
+      "name": "Orbit Chain",
+      "date": "2024-01-01",
+      "lossUSD": 81500000,
+      "chain": "Klaytn/Ethereum"
+    },
+    {
+      "name": "LI.FI Protocol",
+      "date": "2024-07-16",
+      "lossUSD": 11600000,
+      "chain": "Multi-chain"
+    },
+    {
+      "name": "Socket (Bungee)",
+      "date": "2024-01-16",
+      "lossUSD": 3300000,
+      "chain": "Multi-chain"
+    },
+    {
+      "name": "Debridge",
+      "date": "2022-09-08",
+      "lossUSD": 0,
+      "chain": "Multi-chain",
+      "note": "Attempted, thwarted"
+    }
+  ],
+  "volumeTrend": []
+}
