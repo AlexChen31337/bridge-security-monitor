@@ -1,10 +1,11 @@
-name: 🌰 BridgeWatch — Weekly Update & Deploy
+# 🌰 Bridge Security Monitor — Weekly Update & Deploy
+name: 🌰 Update Bridge Data & Deploy
 
 on:
   push:
     branches: ["main"]
   schedule:
-    - cron: '0 8 * * 1'  # Every Monday 08:00 UTC
+    - cron: '0 8 * * 1'  # 🌰 Every Monday 08:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -19,29 +20,26 @@ jobs:
       - name: 🌰 Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js 20
+      - name: 🌰 Setup Node.js 20
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
       - name: 🌰 Fetch bridge data (DeFiLlama)
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-        run: node scripts/fetch-bridge-data.js
+        run: node scripts/api-call.js
 
-      - name: 🌰 Generate AI brief (GitHub Models)
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-        run: node scripts/generate-brief.js
+      - name: 🌰 Generate AI intelligence brief (GitHub Models)
+        run: node scripts/generate-report.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 🌰 Commit updated data
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
-          git config --local user.email "bridgewatch-bot@users.noreply.github.com"
-          git config --local user.name "BridgeWatch 🌰"
+          git config --local user.email "bridge-bot@users.noreply.github.com"
+          git config --local user.name "🌰 Bridge Security Bot"
           git add data/
           if ! git diff --staged --quiet; then
-            git commit -m "🌰 Weekly update — $(date -u '+%Y-%m-%d')"
+            git commit -m "🌰 Weekly data update — $(date -u '+%Y-%m-%d')"
             git push
           fi
 
@@ -52,13 +50,15 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: 🌰 Checkout
+      - name: 🌰 Checkout (with latest data)
         uses: actions/checkout@v4
+        with:
+          ref: main
 
-      - name: Setup Pages
+      - name: 🌰 Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload Pages artifact
+      - name: 🌰 Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
