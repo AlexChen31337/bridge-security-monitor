@@ -1,6 +1,6 @@
 # 🌰 Bridge Security Intelligence Brief
 
-_Generated: 2026-03-09T05:16:27.170Z · Model: gpt-4o-mini_
+_Generated: 2026-03-09T05:17:40.748Z · Model: gpt-4o-mini_
 
 ## 🌰 Bridge Security Intelligence Brief — Mon Mar 09 2026
 
