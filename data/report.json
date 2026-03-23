@@ -1,29 +1,29 @@
 {
   "meta": {
-    "generatedAt": "2026-03-16T08:51:20.395Z",
+    "generatedAt": "2026-03-23T08:49:44.820Z",
     "model": "gpt-4o-mini",
     "bridgesAnalyzed": 80
   },
   "summary": {
     "totalBridges": 80,
-    "totalTVL": 39421205856.76059,
+    "totalTVL": 37523629899.774445,
     "riskBreakdown": {
       "CRITICAL": 1,
       "HIGH": 3,
-      "MEDIUM": 23,
-      "LOW": 53
+      "MEDIUM": 24,
+      "LOW": 52
     },
-    "totalVolume24h": 1013295785.7337579,
-    "totalVolume7d": 3180933320.9518723
+    "totalVolume24h": 461986875.4890098,
+    "totalVolume7d": 2220453597.8270893
   },
-  "report": "**Bridge Security Intelligence Brief**  \n*Week of March 16, 2026*\n\n**Current Risk Landscape**: The bridge security landscape remains precarious, with 80 tracked bridges showing a range of risk levels: 1 classified as CRITICAL, 3 as HIGH, 23 as MEDIUM, and 53 as LOW. The total value locked (TVL) across these bridges stands at $39.4 billion. Notably, the Multichain bridge has recently been exploited, underscoring the vulnerabilities present even in high-traffic infrastructures. The critical risk status of Multichain, with a score of 70/100, indicates a significant exposure that could lead to future incidents, especially given its extensive connectivity across 54 chains.\n\n**Capital Concentration and Attacker Economics**: The concentration of capital in the top bridges remains alarming. The WBTC bridge leads with a TVL of $8.6 billion, followed closely by Coinbase Bridge at $5.4 billion and Binance Bitcoin with $5.0 billion. These platforms present lucrative targets for attackers, particularly given their risk classifications. The economic incentives for malicious actors are substantial, as evidenced by historical exploits where a total of $2.85 billion has been lost across 10 incidents. This trend highlights that as bridges attract more capital, the potential rewards for successful attacks also increase, thus escalating the urgency for robust security measures.\n\n**Lessons from Historical Exploits**: Reviewing recent historical exploits reveals critical lessons for bridge security. The Orbit Chain Bridge incident in January 2024 resulted in a loss of $82 million due to a compromised multi-signature setup, while the Multichain breach in July 2023 saw a staggering $125 million siphoned as a result of suspected key compromise. Furthermore, the BSC Token Hub incident in October 2022 exemplifies the risks of inadequate verification processes, leading to a massive $570 million loss. These cases illustrate that weaknesses in governance mechanisms and verification processes are recurring themes that need to be addressed to mitigate future risks.\n\n**Key Takeaways**: The current bridge security environment is characterized by high capital concentration and significant vulnerabilities, particularly in high-risk bridges. Stakeholders must prioritize the implementation of multi-layered security protocols, including enhanced governance structures and rigorous verification systems, to safeguard against potential exploits. As the landscape evolves, ongoing vigilance and a proactive approach to risk assessment will be crucial in protecting the integrity of cross-chain bridges and the assets they govern.",
+  "report": "**Bridge Security Intelligence Brief – Week of March 23, 2026**\n\nThe current risk landscape for cross-chain bridges remains concerning, with a total of 80 bridges being monitored. Among these, one is classified as critical, three as high risk, 24 as medium, and 52 as low risk. The total value locked (TVL) across these bridges stands at approximately $37.5 billion. The Multichain bridge, which has been previously exploited, continues to pose a significant risk with a score of 70/100 and a TVL of $44 million. This highlights the ongoing vulnerabilities present in high-traffic bridges, especially those with complex operational architectures.\n\nCapital concentration in the bridge ecosystem is noteworthy, with the top five bridges holding substantial TVL. The Wrapped Bitcoin (WBTC) bridge leads with $8.0 billion, followed by the Coinbase Bridge at $5.0 billion and Binance Bitcoin at $4.7 billion. Notably, the Coinbase Bridge, despite its high TVL, has been categorized as high risk, indicating potential weaknesses that could be exploited. The concentration of capital in these few bridges raises the stakes for potential attackers, as a successful exploit could yield significant financial gains. Past incidents, such as the $570 million loss at the BSC Token Hub and the $125 million loss at the Multichain bridge, underscore the lucrative nature of these targets.\n\nHistorically, bridge exploits have revealed critical vulnerabilities, such as compromised multi-signature setups and private key breaches. For example, the Orbit Chain Bridge exploit in January 2024 saw a loss of $82 million due to a compromised multi-sig wallet (7 of 10 signatures). The BSC Token Hub attack demonstrated the devastating impact of technical failures in proof verification, resulting in the single largest loss of $570 million. These incidents indicate a pattern where both human and technical flaws can lead to significant financial losses, and they highlight the need for enhanced security protocols across the board.\n\nKey takeaways from this week's analysis include the urgent necessity for continuous risk assessment and improvement in security measures, particularly for high-risk bridges. The historical context of losses serves as a critical reminder of the vulnerabilities that exist in the ecosystem, emphasizing the importance of strong governance, robust cryptographic practices, and regular audits. As the bridge infrastructure continues to evolve, stakeholders must prioritize security to protect the substantial capital locked within these platforms.",
   "topRiskBridges": [
     {
       "name": "Multichain",
       "riskScore": 70,
       "riskLevel": "CRITICAL",
       "chainCount": 54,
-      "tvl": 47656767.278519325,
+      "tvl": 44343116.89357631,
       "exploitHistory": {
         "found": true,
         "details": {
