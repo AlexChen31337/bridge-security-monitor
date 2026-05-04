@@ -1,29 +1,29 @@
 {
   "meta": {
-    "generatedAt": "2026-04-27T10:10:13.839Z",
+    "generatedAt": "2026-05-04T10:09:16.538Z",
     "model": "gpt-4o-mini",
     "bridgesAnalyzed": 80
   },
   "summary": {
     "totalBridges": 80,
-    "totalTVL": 40449999274.64031,
+    "totalTVL": 41012352968.41505,
     "riskBreakdown": {
       "CRITICAL": 1,
-      "HIGH": 2,
-      "MEDIUM": 23,
+      "HIGH": 3,
+      "MEDIUM": 22,
       "LOW": 54
     },
-    "totalVolume24h": 194623857.3967562,
-    "totalVolume7d": 1653488702.0282881
+    "totalVolume24h": 648655994.5765846,
+    "totalVolume7d": 1155879880.971979
   },
-  "report": "**Bridge Security Intelligence Brief — Week of April 27, 2026**\n\n**Current Risk Landscape**: The current risk landscape for cross-chain bridges remains concerning, with a total of 80 bridges under active surveillance. A critical risk has been identified in one bridge, Multichain, which has a risk score of 70/100 and a total value locked (TVL) of $45 million. Additionally, two bridges are classified as high-risk, while 23 are deemed medium-risk, and 54 bridges are considered low-risk. The overall TVL across these bridges stands at $40.4 billion, indicating a substantial capital concentration that could be targeted by malicious entities. \n\n**Capital Concentration and Attacker Economics**: The highest total value locked bridges, which are prime targets for attackers due to their significant capital, are as follows: WBTC ($9.0B TVL, Medium risk), Coinbase Bridge ($5.7B TVL, High risk), and Binance Bitcoin ($5.3B TVL, Medium risk). The concentration of funds in these platforms presents lucrative opportunities for exploitation, especially as they exhibit varying risk ratings. The likelihood of an attack is heightened in high-risk scenarios, exemplified by the Coinbase Bridge's substantial TVL and existing vulnerabilities. The economics of these attacks can be illustrated by historical data; for instance, the BSC Token Hub suffered a loss of $570 million due to a proof forgery exploit, showcasing the potential financial gain for attackers.\n\n**Lessons from Historical Exploits**: A review of recent historical exploits offers critical insights into vulnerabilities inherent to bridge architectures. Notably, the Multichain exploit in July 2023 resulted from a suspected private key compromise, emphasizing the importance of robust key management practices. Further, the Orbit Chain Bridge incident in January 2024, where a multi-signature wallet was compromised (7 of 10), highlights the weaknesses associated with multi-sig mechanisms. In total, historical losses across 10 significant incidents have reached $2.85 billion, underscoring the urgent need for enhanced security measures and proactive monitoring.\n\n**Key Takeaways**: The current state of cross-chain bridge security presents a multifaceted risk environment. Stakeholders must prioritize the strengthening of security protocols, particularly for high-risk and high-TVL bridges. Implementing advanced security features, such as improved multi-signature configurations and robust key management practices, could mitigate risks. Continuous assessment of bridge vulnerabilities and historical exploit patterns will be essential in developing a resilient security posture. As the landscape evolves, maintaining vigilance and adapting to emerging threats will be paramount in safeguarding the integrity of cross-chain transactions.",
+  "report": "### Bridge Security Intelligence Brief  \n**Week of May 04, 2026**  \n\nThe current risk landscape for cross-chain bridges remains alarming, with 1 critical and 3 high-risk bridges identified among the 80 tracked. The total value locked (TVL) across these bridges stands at $41.0 billion, highlighting the significant financial stakes involved. Notably, the Multichain bridge has recently suffered an exploit, with a risk score of 70/100 and a TVL of $46 million. This incident underscores the precarious nature of multi-chain operations, which are inherently more vulnerable due to their complexity and the number of chains integrated.\n\nCapital concentration continues to be a major concern, as the highest TVL bridges are prime targets for potential attacks. The WBTC bridge leads with a TVL of $9.2 billion, followed by Coinbase Bridge at $5.8 billion and Binance Bitcoin at $5.4 billion. Despite WBTC’s medium risk designation, its substantial TVL makes it an attractive target, especially given that the top four bridges collectively hold over $23 billion in assets. The economic incentive for attackers remains robust; compromising any of these bridges could yield significant financial returns, especially when considering the history of exploits where attackers have netted losses ranging from hundreds of thousands to several hundred million dollars.\n\nHistorical exploits provide critical lessons for the ongoing security challenges faced by cross-chain bridges. The Orbit Chain Bridge incident in January 2024, which resulted in an $82 million loss due to a compromised multi-sig wallet, serves as a stark reminder of the vulnerabilities inherent in multi-signature mechanisms. The larger $570 million exploit of the BSC Token Hub in 2022 illustrates the catastrophic consequences of fundamental flaws in cryptographic verification processes. Collectively, these incidents have resulted in total historical losses amounting to $2.85 billion across just ten incidents, emphasizing the urgent need for enhanced security measures.\n\nKey takeaways indicate that as the cross-chain ecosystem expands, so too does the complexity and risk associated with these bridges. Stakeholders must prioritize advanced security protocols, including rigorous multi-signature practices and robust verification mechanisms, to safeguard against exploits. Additionally, continuous monitoring and analysis of bridge performance and risk assessments will be vital in mitigating potential vulnerabilities. The lessons learned from past exploits are invaluable; adopting a proactive stance in bridge security is essential to protect the growing capital concentrated within this sector.",
   "topRiskBridges": [
     {
       "name": "Multichain",
       "riskScore": 70,
       "riskLevel": "CRITICAL",
       "chainCount": 54,
-      "tvl": 45349825.85419209,
+      "tvl": 45547463.41838256,
       "exploitHistory": {
         "found": true,
         "details": {
