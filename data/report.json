@@ -1,29 +1,29 @@
 {
   "meta": {
-    "generatedAt": "2026-05-04T10:09:16.538Z",
+    "generatedAt": "2026-05-11T10:56:36.748Z",
     "model": "gpt-4o-mini",
     "bridgesAnalyzed": 80
   },
   "summary": {
     "totalBridges": 80,
-    "totalTVL": 41012352968.41505,
+    "totalTVL": 42358673653.373924,
     "riskBreakdown": {
       "CRITICAL": 1,
       "HIGH": 3,
       "MEDIUM": 22,
       "LOW": 54
     },
-    "totalVolume24h": 648655994.5765846,
-    "totalVolume7d": 1155879880.971979
+    "totalVolume24h": 337541223.77810764,
+    "totalVolume7d": 1951200362.4866383
   },
-  "report": "### Bridge Security Intelligence Brief  \n**Week of May 04, 2026**  \n\nThe current risk landscape for cross-chain bridges remains alarming, with 1 critical and 3 high-risk bridges identified among the 80 tracked. The total value locked (TVL) across these bridges stands at $41.0 billion, highlighting the significant financial stakes involved. Notably, the Multichain bridge has recently suffered an exploit, with a risk score of 70/100 and a TVL of $46 million. This incident underscores the precarious nature of multi-chain operations, which are inherently more vulnerable due to their complexity and the number of chains integrated.\n\nCapital concentration continues to be a major concern, as the highest TVL bridges are prime targets for potential attacks. The WBTC bridge leads with a TVL of $9.2 billion, followed by Coinbase Bridge at $5.8 billion and Binance Bitcoin at $5.4 billion. Despite WBTC’s medium risk designation, its substantial TVL makes it an attractive target, especially given that the top four bridges collectively hold over $23 billion in assets. The economic incentive for attackers remains robust; compromising any of these bridges could yield significant financial returns, especially when considering the history of exploits where attackers have netted losses ranging from hundreds of thousands to several hundred million dollars.\n\nHistorical exploits provide critical lessons for the ongoing security challenges faced by cross-chain bridges. The Orbit Chain Bridge incident in January 2024, which resulted in an $82 million loss due to a compromised multi-sig wallet, serves as a stark reminder of the vulnerabilities inherent in multi-signature mechanisms. The larger $570 million exploit of the BSC Token Hub in 2022 illustrates the catastrophic consequences of fundamental flaws in cryptographic verification processes. Collectively, these incidents have resulted in total historical losses amounting to $2.85 billion across just ten incidents, emphasizing the urgent need for enhanced security measures.\n\nKey takeaways indicate that as the cross-chain ecosystem expands, so too does the complexity and risk associated with these bridges. Stakeholders must prioritize advanced security protocols, including rigorous multi-signature practices and robust verification mechanisms, to safeguard against exploits. Additionally, continuous monitoring and analysis of bridge performance and risk assessments will be vital in mitigating potential vulnerabilities. The lessons learned from past exploits are invaluable; adopting a proactive stance in bridge security is essential to protect the growing capital concentrated within this sector.",
+  "report": "**BRIDGE SECURITY INTELLIGENCE BRIEF — Week of May 11, 2026**\n\nThe current risk landscape for cross-chain bridges remains alarmingly precarious, with a total of 80 bridges under surveillance revealing a concerning distribution of risk levels. Currently, 1 bridge is classified as critical, 3 as high risk, 22 as medium, and 54 as low risk. The total value locked (TVL) across these bridges stands at $42.4 billion, highlighting the significant potential impact of any security incidents. The Multichain bridge, which has recently been exploited, continues to pose a critical risk with a score of 70/100, indicating vulnerabilities that can be exploited despite its relatively low TVL of only $47 million.\n\nCapital concentration remains a critical factor in assessing the risk landscape, as the top five bridges by TVL collectively represent nearly 66% of the total TVL. Notably, WBTC holds the largest share at $9.3 billion with a medium-risk classification, followed closely by the Coinbase Bridge at $6.6 billion, which is classified as high risk. This concentration suggests that a successful exploit against either of these bridges could result in catastrophic losses, potentially mirroring past incidents where the BSC Token Hub suffered a staggering $570 million loss due to a fake proof forgery.\n\nHistorically, cross-chain bridges have been plagued by security breaches that have resulted in substantial financial losses, totaling $2.85 billion across 10 significant exploits. Noteworthy incidents include the $125 million exploit of Multichain (Anyswap) attributed to a suspected private key compromise, and the $82 million loss from the Orbit Chain Bridge, which suffered from a compromised multi-signature process. These incidents underscore the critical need for robust multi-signature arrangements and secure private key management to mitigate vulnerabilities.\n\nKey takeaways from the current landscape indicate a pressing need for enhanced security measures across high-risk bridges, particularly those with significant TVLs. Entities managing these bridges should prioritize the implementation of advanced security protocols, including regular audits and real-time monitoring systems, to detect and respond to threats proactively. Furthermore, diversifying capital across multiple lower-risk bridges may help mitigate the impact of a potential exploit in any single high-TVL entity. As the cross-chain ecosystem continues to evolve, maintaining a proactive stance toward security will be essential to safeguard invested capital and maintain user trust.",
   "topRiskBridges": [
     {
       "name": "Multichain",
       "riskScore": 70,
       "riskLevel": "CRITICAL",
       "chainCount": 54,
-      "tvl": 45547463.41838256,
+      "tvl": 46754732.66669899,
       "exploitHistory": {
         "found": true,
         "details": {
