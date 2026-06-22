@@ -3,20 +3,20 @@
     "description": "🌰 Bridge Security Monitor — live bridge risk scores",
     "source": "DeFiLlama Protocols API (https://api.llama.fi/protocols)",
     "methodology": "Risk score = TVL exposure (0-40) + exploit history (0-40) + chain surface area (0-20)",
-    "generatedAt": "2026-06-15T13:49:56.092Z"
+    "generatedAt": "2026-06-22T13:30:23.885Z"
   },
   "summary": {
     "totalBridges": 80,
     "byRiskLevel": {
       "CRITICAL": 1,
       "HIGH": 4,
-      "MEDIUM": 24,
-      "LOW": 51
+      "MEDIUM": 23,
+      "LOW": 52
     },
-    "totalTVL": 46653023075.36579,
-    "totalVolume24h": 1020180109.0626003,
-    "totalVolume7d": 1654939339.3924239,
-    "fetchedAt": "2026-06-15T13:49:56.092Z"
+    "totalTVL": 46158339627.30792,
+    "totalVolume24h": 394878180.6816074,
+    "totalVolume7d": 905409210.5171468,
+    "fetchedAt": "2026-06-22T13:30:23.884Z"
   },
   "bridges": [
     {
@@ -34,8 +34,8 @@
         "Fantom",
         "Cronos",
         "Kucoin",
-        "Harmony",
         "Polygon zkEVM",
+        "Harmony",
         "Arbitrum Nova",
         "OKExChain",
         "Dogechain",
@@ -73,17 +73,17 @@
         "Oasis",
         "REI",
         "GodwokenV1",
-        "Bitgert",
         "EthereumClassic",
+        "Bitgert",
         "OntologyEVM",
         "Syscoin",
         "Shiden"
       ],
       "chainCount": 54,
-      "tvl": 39668419.57649903,
-      "volume24h": 843020.0901305248,
-      "volume7d": 138540.64279750615,
-      "volume30d": 7933683.915299807,
+      "tvl": 38535953.61501129,
+      "volume24h": 257316.10300374168,
+      "volume7d": 823310.8128992089,
+      "volume30d": 7707190.723002259,
       "riskScore": 70,
       "riskLevel": "CRITICAL",
       "exploitHistory": {
@@ -101,17 +101,17 @@
       "slug": "layerzero-v2",
       "chains": [
         "Ethereum",
-        "Base",
         "Arbitrum",
-        "Abstract",
-        "Polygon",
+        "Base",
         "Avalanche",
+        "Polygon",
+        "Abstract",
         "Stable",
         "Binance",
-        "Hemi",
         "Plasma",
-        "Hyperliquid L1",
+        "Hemi",
         "Citrea",
+        "Hyperliquid L1",
         "Flare",
         "Fraxtal",
         "Celo",
@@ -119,53 +119,53 @@
         "Berachain",
         "Optimism",
         "Fantom",
-        "Katana",
         "Metis",
+        "Katana",
         "zkSync Era",
-        "RSK",
-        "Astar",
         "TAC",
+        "Astar",
         "Peaq",
         "Ink",
+        "RSK",
         "Blast",
         "Mode",
-        "Canto",
         "Nibiru",
         "Sonic",
         "Monad",
         "xDai",
         "Linea",
         "X Layer",
-        "Plume Mainnet",
         "Kava",
-        "Swellchain",
-        "Manta",
-        "Scroll",
-        "Morph",
-        "Tempo",
-        "World Chain",
-        "Unichain",
-        "Lisk",
-        "Taiko",
-        "Harmony",
-        "Soneium",
-        "Goat",
-        "Flow",
-        "BOB",
-        "Hedera",
+        "Plume Mainnet",
         "XDC",
+        "Flow",
+        "Tempo",
+        "Scroll",
+        "Lisk",
         "Klaytn",
-        "Op_Bnb",
-        "Moonriver",
         "MegaETH",
+        "World Chain",
+        "BOB",
+        "Soneium",
+        "Swellchain",
         "Conflux",
-        "Sei"
+        "Unichain",
+        "Taiko",
+        "Moonriver",
+        "Sei",
+        "Goat",
+        "Harmony",
+        "Morph",
+        "Hedera",
+        "Op_Bnb",
+        "Canto",
+        "Manta"
       ],
       "chainCount": 60,
-      "tvl": 7557101767.529639,
-      "volume24h": 6812244.693827871,
-      "volume7d": 37014531.11269644,
-      "volume30d": 1511420353.505928,
+      "tvl": 7557722440.569171,
+      "volume24h": 13323830.371268015,
+      "volume7d": 8541957.054341283,
+      "volume30d": 1511544488.1138344,
       "riskScore": 60,
       "riskLevel": "HIGH",
       "exploitHistory": {
@@ -182,12 +182,12 @@
         "Algorand",
         "Binance",
         "Solana",
+        "Sui",
         "Polygon",
         "Near",
         "Base",
         "Avalanche",
         "Arbitrum",
-        "Sui",
         "Aptos",
         "Optimism",
         "Moonbeam",
@@ -204,10 +204,10 @@
         "XPLA"
       ],
       "chainCount": 24,
-      "tvl": 2209181668.2576795,
-      "volume24h": 109845860.845035,
-      "volume7d": 376835446.3320763,
-      "volume30d": 441836333.6515359,
+      "tvl": 2050894319.484361,
+      "volume24h": 91484299.93306929,
+      "volume7d": 146946097.3309026,
+      "volume30d": 410178863.8968722,
       "riskScore": 60,
       "riskLevel": "HIGH",
       "exploitHistory": {
@@ -222,12 +222,13 @@
       "chains": [
         "Ethereum",
         "Avalanche",
+        "Solana",
         "Base",
+        "Ronin",
+        "Optimism",
         "Arbitrum",
         "Binance",
-        "Ronin",
         "BOB",
-        "Optimism",
         "Pharos",
         "World Chain",
         "zkSync Era",
@@ -239,11 +240,11 @@
         "HashKey Chain",
         "Shibarium"
       ],
-      "chainCount": 18,
-      "tvl": 1227440391.5293157,
-      "volume24h": 52693419.166249484,
-      "volume7d": 40410866.44377472,
-      "volume30d": 245488078.30586314,
+      "chainCount": 19,
+      "tvl": 1320185127.9853988,
+      "volume24h": 3886742.1302186893,
+      "volume7d": 100762538.71305338,
+      "volume30d": 264037025.59707975,
       "riskScore": 60,
       "riskLevel": "HIGH",
       "exploitHistory": {
@@ -259,14 +260,14 @@
         "Bitcoin",
         "Ripple",
         "Doge",
-        "Cardano",
-        "Litecoin"
+        "Litecoin",
+        "Cardano"
       ],
       "chainCount": 5,
-      "tvl": 5672360521.206646,
-      "volume24h": 148193997.26394138,
-      "volume7d": 153507309.1536707,
-      "volume30d": 1134472104.2413292,
+      "tvl": 5567721379.081193,
+      "volume24h": 95636323.59811129,
+      "volume7d": 102708843.43872137,
+      "volume30d": 1113544275.8162386,
       "riskScore": 50,
       "riskLevel": "HIGH",
       "exploitHistory": {
@@ -282,10 +283,10 @@
         "Bitcoin"
       ],
       "chainCount": 1,
-      "tvl": 7549492373.413951,
-      "volume24h": 197022557.11351368,
-      "volume7d": 352919986.91112185,
-      "volume30d": 1509898474.6827903,
+      "tvl": 7379340068.629218,
+      "volume24h": 53949361.19301919,
+      "volume7d": 166317370.54127118,
+      "volume30d": 1475868013.7258437,
       "riskScore": 45,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -302,10 +303,10 @@
         "Arbitrum"
       ],
       "chainCount": 2,
-      "tvl": 5816615217.116352,
-      "volume24h": 47371799.71417502,
-      "volume7d": 18720323.814796895,
-      "volume30d": 1163323043.4232705,
+      "tvl": 5796109006.6509495,
+      "volume24h": 30988622.397654444,
+      "volume7d": 20433916.759879038,
+      "volume30d": 1159221801.33019,
       "riskScore": 45,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -321,10 +322,10 @@
         "Bitcoin"
       ],
       "chainCount": 1,
-      "tvl": 4511979504.627677,
-      "volume24h": 117751193.81218912,
-      "volume7d": 184242156.48435646,
-      "volume30d": 902395900.9255354,
+      "tvl": 4410287407.479865,
+      "volume24h": 32243017.139518324,
+      "volume7d": 99400135.80097643,
+      "volume30d": 882057481.4959731,
       "riskScore": 45,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -340,10 +341,10 @@
         "Ethereum"
       ],
       "chainCount": 1,
-      "tvl": 3604104613.8074346,
-      "volume24h": 76103280.98027633,
-      "volume7d": 76782293.12078959,
-      "volume30d": 720820922.761487,
+      "tvl": 3673092845.0022373,
+      "volume24h": 11714347.292975646,
+      "volume7d": 70308774.45127618,
+      "volume30d": 734618569.0004475,
       "riskScore": 45,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -359,10 +360,10 @@
         "Tron"
       ],
       "chainCount": 1,
-      "tvl": 2017020934.17,
-      "volume24h": 63428183.366693325,
-      "volume7d": 80258794.13145694,
-      "volume30d": 403404186.83400005,
+      "tvl": 1985297713.28,
+      "volume24h": 13113844.961363234,
+      "volume7d": 31224285.689781073,
+      "volume30d": 397059542.656,
       "riskScore": 45,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -382,10 +383,10 @@
         "Scroll"
       ],
       "chainCount": 5,
-      "tvl": 533136607.95310396,
-      "volume24h": 4614194.350134907,
-      "volume7d": 31362351.030877918,
-      "volume30d": 106627321.5906208,
+      "tvl": 528337505.3158118,
+      "volume24h": 1849297.1456787186,
+      "volume7d": 3791373.872068473,
+      "volume30d": 105667501.06316237,
       "riskScore": 40,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -412,10 +413,10 @@
         "Avalanche"
       ],
       "chainCount": 12,
-      "tvl": 425626227.6543909,
-      "volume24h": 12091900.7642433,
-      "volume7d": 20799836.661458265,
-      "volume30d": 85125245.53087819,
+      "tvl": 418322015.3234479,
+      "volume24h": 3095766.708834308,
+      "volume7d": 7178864.04573622,
+      "volume30d": 83664403.06468958,
       "riskScore": 40,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -439,10 +440,10 @@
         "Avalanche",
         "Osmosis",
         "Cosmos",
-        "Base",
         "Stride",
         "Celestia",
         "Persistence",
+        "Base",
         "Agoric",
         "Chihuahua",
         "Secret",
@@ -453,7 +454,6 @@
         "XRPL EVM",
         "Carbon",
         "Umee",
-        "Blast",
         "Evmos",
         "Kujira",
         "Migaloo",
@@ -465,19 +465,20 @@
         "XPLA",
         "Aurora",
         "Immutable zkEVM",
-        "Fraxtal",
         "Celo",
-        "Scroll",
-        "Kava",
-        "Moonbeam",
+        "Fraxtal",
         "Linea",
+        "Kava",
+        "Blast",
+        "Moonbeam",
+        "Scroll",
         "Filecoin"
       ],
       "chainCount": 44,
-      "tvl": 145221321.9021108,
-      "volume24h": 1844790.5856873759,
-      "volume7d": 1007297.3931469024,
-      "volume30d": 29044264.38042216,
+      "tvl": 140499260.9825638,
+      "volume24h": 879497.3705468561,
+      "volume7d": 4568516.942423972,
+      "volume30d": 28099852.19651276,
       "riskScore": 40,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -493,10 +494,10 @@
         "Bitcoin"
       ],
       "chainCount": 1,
-      "tvl": 705909824.4545647,
-      "volume24h": 18422451.712829176,
-      "volume7d": 23943022.929824863,
-      "volume30d": 141181964.89091295,
+      "tvl": 690656923.0497445,
+      "volume24h": 7219178.128947739,
+      "volume7d": 14923325.312796073,
+      "volume30d": 138131384.6099489,
       "riskScore": 35,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -513,10 +514,10 @@
         "Arbitrum"
       ],
       "chainCount": 2,
-      "tvl": 505894723.35444844,
-      "volume24h": 6886829.722922543,
-      "volume7d": 3412343.26854329,
-      "volume30d": 101178944.67088969,
+      "tvl": 503669920.6828298,
+      "volume24h": 3000997.743488101,
+      "volume7d": 2189809.662366525,
+      "volume30d": 100733984.13656597,
       "riskScore": 35,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -535,14 +536,14 @@
         "Binance",
         "Manta",
         "Kroma",
-        "Polygon",
-        "Hemi"
+        "Hemi",
+        "Polygon"
       ],
       "chainCount": 8,
-      "tvl": 277955029.09623224,
-      "volume24h": 5063143.372363565,
-      "volume7d": 11346694.150324319,
-      "volume30d": 55591005.81924645,
+      "tvl": 273374117.4448227,
+      "volume24h": 3054939.3927505817,
+      "volume7d": 4505414.72075043,
+      "volume30d": 54674823.48896455,
       "riskScore": 35,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -562,10 +563,10 @@
         "Monad"
       ],
       "chainCount": 5,
-      "tvl": 443661604.3003743,
-      "volume24h": 19625469.489718366,
-      "volume7d": 19517074.053127825,
-      "volume30d": 88732320.86007488,
+      "tvl": 442041502.8619515,
+      "volume24h": 4193035.9242522265,
+      "volume7d": 1614185.3784227534,
+      "volume30d": 88408300.5723903,
       "riskScore": 30,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -584,38 +585,16 @@
         "Zkfair"
       ],
       "chainCount": 4,
-      "tvl": 395178594.85079515,
-      "volume24h": 9597420.790285068,
-      "volume7d": 16085136.545094907,
-      "volume30d": 79035718.97015904,
+      "tvl": 386123320.7876301,
+      "volume24h": 2822977.0094525055,
+      "volume7d": 8847778.036235798,
+      "volume30d": 77224664.15752602,
       "riskScore": 30,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
         "found": false
       },
       "url": "https://merlinchain.io/bridge/staking"
-    },
-    {
-      "id": "4954",
-      "name": "edgeX Bridge",
-      "slug": "edgex-bridge",
-      "chains": [
-        "Ethereum",
-        "edgeX L1",
-        "Arbitrum",
-        "Binance"
-      ],
-      "chainCount": 4,
-      "tvl": 103913683.78803064,
-      "volume24h": 2239303.846822839,
-      "volume7d": 8606442.491120107,
-      "volume30d": 20782736.75760613,
-      "riskScore": 30,
-      "riskLevel": "MEDIUM",
-      "exploitHistory": {
-        "found": false
-      },
-      "url": "https://pro.edgex.exchange"
     },
     {
       "id": "7228",
@@ -628,17 +607,17 @@
         "Binance",
         "Hyperliquid L1",
         "Solana",
-        "Bitcoin",
         "Ripple",
         "Doge",
+        "Bitcoin",
         "Litecoin",
         "Cardano"
       ],
       "chainCount": 11,
-      "tvl": 56072477.54433391,
-      "volume24h": 1591526.6167820417,
-      "volume7d": 1894311.9404912302,
-      "volume30d": 11214495.508866783,
+      "tvl": 54699782.445435025,
+      "volume24h": 481123.13354653923,
+      "volume7d": 1339090.5228740224,
+      "volume30d": 10939956.489087006,
       "riskScore": 30,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -704,14 +683,14 @@
         "Ethereum",
         "Binance",
         "Ripple",
-        "Bitcoin",
         "Arbitrum",
-        "Solana",
+        "Bitcoin",
         "Optimism",
-        "Base",
         "Avalanche",
-        "Polygon",
+        "Solana",
+        "Base",
         "Wanchain",
+        "Polygon",
         "X Layer",
         "Metis",
         "Blast",
@@ -732,16 +711,16 @@
         "OKExChain",
         "Bitrock",
         "Tron",
-        "Noble",
         "Telos",
         "Songbird",
+        "Noble",
         "Energi"
       ],
       "chainCount": 36,
-      "tvl": 24768401.9005012,
-      "volume24h": 1416420.467546255,
-      "volume7d": 1005236.0085544144,
-      "volume30d": 4953680.38010024,
+      "tvl": 24767076.27391263,
+      "volume24h": 124038.39179404033,
+      "volume7d": 213674.33288047306,
+      "volume30d": 4953415.254782527,
       "riskScore": 30,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -776,10 +755,10 @@
         "Avalanche"
       ],
       "chainCount": 20,
-      "tvl": 23781495.46245585,
-      "volume24h": 894217.8220826043,
-      "volume7d": 1120092.597163918,
-      "volume30d": 4756299.09249117,
+      "tvl": 23541251.335667435,
+      "volume24h": 593758.7953486497,
+      "volume7d": 237817.14566994554,
+      "volume30d": 4708250.267133487,
       "riskScore": 30,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -811,10 +790,10 @@
         "Morph"
       ],
       "chainCount": 17,
-      "tvl": 23663302.429787297,
-      "volume24h": 575614.1859268979,
-      "volume7d": 660363.802454667,
-      "volume30d": 4732660.48595746,
+      "tvl": 23238880.887909997,
+      "volume24h": 105345.48673868354,
+      "volume7d": 416809.1789899148,
+      "volume30d": 4647776.177581999,
       "riskScore": 30,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -843,10 +822,10 @@
         "Sonic"
       ],
       "chainCount": 14,
-      "tvl": 20848942.591759175,
-      "volume24h": 1347923.0482645493,
-      "volume7d": 1101267.7051325678,
-      "volume30d": 4169788.518351835,
+      "tvl": 21594866.39048785,
+      "volume24h": 8974.625680537756,
+      "volume7d": 772611.1144551651,
+      "volume30d": 4318973.27809757,
       "riskScore": 30,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -872,10 +851,10 @@
         "Meta"
       ],
       "chainCount": 11,
-      "tvl": 16034635.94232336,
-      "volume24h": 539096.097276028,
-      "volume7d": 534141.2346307142,
-      "volume30d": 3206927.1884646723,
+      "tvl": 15552042.764941096,
+      "volume24h": 86912.74893985371,
+      "volume7d": 468068.6084619819,
+      "volume30d": 3110408.5529882195,
       "riskScore": 30,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -893,8 +872,9 @@
         "Polygon",
         "Arbitrum",
         "Optimism",
-        "zkSync Era",
         "Avalanche",
+        "zkSync Era",
+        "Shiden",
         "Aurora",
         "Linea",
         "Boba",
@@ -912,17 +892,16 @@
         "Harmony",
         "Oasis",
         "REI",
-        "Astar",
         "Moonriver",
-        "Syscoin",
         "Moonbeam",
-        "Shiden"
+        "Astar",
+        "Syscoin"
       ],
       "chainCount": 29,
-      "tvl": 15168542.818592098,
-      "volume24h": 181211.33631507156,
-      "volume7d": 968544.3871016108,
-      "volume30d": 3033708.5637184195,
+      "tvl": 13286694.851254607,
+      "volume24h": 12389.332141867673,
+      "volume7d": 1648381.1264863303,
+      "volume30d": 2657338.9702509213,
       "riskScore": 30,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -943,17 +922,17 @@
         "Aurora",
         "Harmony",
         "Fuse",
-        "Ripple",
-        "Fantom",
-        "Celo",
         "Polygon",
-        "Avalanche"
+        "Avalanche",
+        "Fantom",
+        "Ripple",
+        "Celo"
       ],
       "chainCount": 13,
-      "tvl": 1368567.1313620687,
-      "volume24h": 5769.274207069837,
-      "volume7d": 327956.9744267176,
-      "volume30d": 273713.42627241375,
+      "tvl": 1339301.471759799,
+      "volume24h": 14283.427670837787,
+      "volume7d": 28639.83803142466,
+      "volume30d": 267860.2943519598,
       "riskScore": 30,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -980,10 +959,10 @@
         "Fantom"
       ],
       "chainCount": 12,
-      "tvl": 1060338.6151096714,
-      "volume24h": 32564.042464465467,
-      "volume7d": 16405.921869454203,
-      "volume30d": 212067.72302193427,
+      "tvl": 1046048.6541504744,
+      "volume24h": 2999.5826741575124,
+      "volume7d": 14097.378154699092,
+      "volume30d": 209209.7308300949,
       "riskScore": 30,
       "riskLevel": "MEDIUM",
       "exploitHistory": {
@@ -999,10 +978,10 @@
         "Bitcoin"
       ],
       "chainCount": 1,
-      "tvl": 403282067.98489195,
-      "volume24h": 10524636.669906208,
-      "volume7d": 33223208.604763206,
-      "volume30d": 80656413.5969784,
+      "tvl": 394192798.1436996,
+      "volume24h": 2881890.446701011,
+      "volume7d": 8884413.655399568,
+      "volume30d": 78838559.62873992,
       "riskScore": 25,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1018,10 +997,10 @@
         "Bitcoin"
       ],
       "chainCount": 1,
-      "tvl": 397425978.6200223,
-      "volume24h": 10371807.626007121,
-      "volume7d": 18674298.728963856,
-      "volume30d": 79485195.72400446,
+      "tvl": 388468694.75261104,
+      "volume24h": 2840042.2978855334,
+      "volume7d": 8755402.413763015,
+      "volume30d": 77693738.95052221,
       "riskScore": 25,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1037,10 +1016,10 @@
         "Bitcoin"
       ],
       "chainCount": 1,
-      "tvl": 227630710.54037002,
-      "volume24h": 45020963.58586635,
-      "volume7d": 48675191.949733905,
-      "volume30d": 45526142.10807401,
+      "tvl": 232906839.43377742,
+      "volume24h": 965814.6575699842,
+      "volume7d": 5398421.426052792,
+      "volume30d": 46581367.88675549,
       "riskScore": 25,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1056,16 +1035,54 @@
         "BSquared"
       ],
       "chainCount": 1,
-      "tvl": 220840262.9942573,
-      "volume24h": 5688588.819049551,
-      "volume7d": 9042422.994044963,
-      "volume30d": 44168052.598851465,
+      "tvl": 215863611.0452165,
+      "volume24h": 1618988.3647441687,
+      "volume7d": 4864502.722780642,
+      "volume30d": 43172722.2090433,
       "riskScore": 25,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": "https://www.unirouter.io"
+    },
+    {
+      "id": "6974",
+      "name": "Lombard BTC.b",
+      "slug": "lombard-btc.b",
+      "chains": [
+        "Bitcoin"
+      ],
+      "chainCount": 1,
+      "tvl": 209272827.11611462,
+      "volume24h": 687763.7539223618,
+      "volume7d": 17721244.73843677,
+      "volume30d": 41854565.42322293,
+      "riskScore": 25,
+      "riskLevel": "LOW",
+      "exploitHistory": {
+        "found": false
+      },
+      "url": "https://www.lombard.finance/app/stake/?referrer=ssybnl"
+    },
+    {
+      "id": "5534",
+      "name": "Stacks sBTC",
+      "slug": "stacks-sbtc",
+      "chains": [
+        "Bitcoin"
+      ],
+      "chainCount": 1,
+      "tvl": 191112260.45728502,
+      "volume24h": 1463225.751650209,
+      "volume7d": 4268136.958014329,
+      "volume30d": 38222452.091457,
+      "riskScore": 25,
+      "riskLevel": "LOW",
+      "exploitHistory": {
+        "found": false
+      },
+      "url": "https://docs.stacks.co/more-guides/sbtc"
     },
     {
       "id": "6772",
@@ -1076,54 +1093,16 @@
         "Flare"
       ],
       "chainCount": 2,
-      "tvl": 201806687.96124625,
-      "volume24h": 12757127.013276398,
-      "volume7d": 10283546.27929992,
-      "volume30d": 40361337.59224925,
+      "tvl": 186860430.20906198,
+      "volume24h": 374494.6017936455,
+      "volume7d": 13839304.246076344,
+      "volume30d": 37372086.0418124,
       "riskScore": 25,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": "https://fassets.au.cc/"
-    },
-    {
-      "id": "5534",
-      "name": "Stacks sBTC",
-      "slug": "stacks-sbtc",
-      "chains": [
-        "Bitcoin"
-      ],
-      "chainCount": 1,
-      "tvl": 195477895.76178834,
-      "volume24h": 5133029.10668178,
-      "volume7d": 7697875.992588056,
-      "volume30d": 39095579.15235767,
-      "riskScore": 25,
-      "riskLevel": "LOW",
-      "exploitHistory": {
-        "found": false
-      },
-      "url": "https://docs.stacks.co/more-guides/sbtc"
-    },
-    {
-      "id": "6974",
-      "name": "Lombard BTC.b",
-      "slug": "lombard-btc.b",
-      "chains": [
-        "Bitcoin"
-      ],
-      "chainCount": 1,
-      "tvl": 192935065.7105853,
-      "volume24h": 3799406.1031050086,
-      "volume7d": 12340601.11408747,
-      "volume30d": 38587013.14211706,
-      "riskScore": 25,
-      "riskLevel": "LOW",
-      "exploitHistory": {
-        "found": false
-      },
-      "url": "https://www.lombard.finance/app/stake/?referrer=ssybnl"
     },
     {
       "id": "4956",
@@ -1134,10 +1113,10 @@
         "Bitcoin"
       ],
       "chainCount": 2,
-      "tvl": 148927994.10315204,
-      "volume24h": 3790211.7036689054,
-      "volume7d": 7032623.922831547,
-      "volume30d": 29785598.82063041,
+      "tvl": 146354291.18156505,
+      "volume24h": 2450566.0926973303,
+      "volume7d": 2529225.409024788,
+      "volume30d": 29270858.23631301,
       "riskScore": 25,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1153,10 +1132,10 @@
         "Bitcoin"
       ],
       "chainCount": 1,
-      "tvl": 144567417.205506,
-      "volume24h": 3769428.633504519,
-      "volume7d": 14439705.72395186,
-      "volume30d": 28913483.4411012,
+      "tvl": 139438040.93300766,
+      "volume24h": 2848010.6068341266,
+      "volume7d": 4947381.5917227315,
+      "volume30d": 27887608.186601534,
       "riskScore": 25,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1178,10 +1157,10 @@
         "zkSync Era"
       ],
       "chainCount": 7,
-      "tvl": 73640582.66978835,
-      "volume24h": 1865021.961867475,
-      "volume7d": 1573379.0053466982,
-      "volume30d": 14728116.53395767,
+      "tvl": 73734827.56468707,
+      "volume24h": 122989.28734064782,
+      "volume7d": 94365.50910210093,
+      "volume30d": 14746965.512937415,
       "riskScore": 25,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1196,18 +1175,18 @@
       "chains": [
         "Bitcoin",
         "Binance",
-        "Base",
         "Ethereum",
+        "Base",
         "Arbitrum",
         "Sei",
         "Mantle",
         "BOB"
       ],
       "chainCount": 8,
-      "tvl": 49490130.129637435,
-      "volume24h": 1279429.7421797682,
-      "volume7d": 2413413.572111627,
-      "volume30d": 9898026.025927488,
+      "tvl": 48015648.55045276,
+      "volume24h": 102176.81215593504,
+      "volume7d": 1023606.6192199242,
+      "volume30d": 9603129.710090553,
       "riskScore": 25,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1228,10 +1207,10 @@
         "Arbitrum"
       ],
       "chainCount": 6,
-      "tvl": 26017082.07552874,
-      "volume24h": 624204.8173020926,
-      "volume7d": 869077.126088713,
-      "volume30d": 5203416.415105749,
+      "tvl": 26120625.932477497,
+      "volume24h": 355085.98729133536,
+      "volume7d": 103955.94506381634,
+      "volume30d": 5224125.1864955,
       "riskScore": 25,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1279,10 +1258,10 @@
         "Sei"
       ],
       "chainCount": 6,
-      "tvl": 2863081.181285043,
-      "volume24h": 176072.6607875118,
-      "volume7d": 116562.79475125141,
-      "volume30d": 572616.2362570086,
+      "tvl": 2485935.8171757977,
+      "volume24h": 57794.05362079697,
+      "volume7d": 319270.89436361217,
+      "volume30d": 497187.16343515954,
       "riskScore": 25,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1303,10 +1282,10 @@
         "Doge"
       ],
       "chainCount": 6,
-      "tvl": 1207299.9765875356,
-      "volume24h": 21241.248647349785,
-      "volume7d": 2825.1064321267004,
-      "volume30d": 241459.99531750713,
+      "tvl": 1157706.587689779,
+      "volume24h": 29484.06162932524,
+      "volume7d": 47556.19493597433,
+      "volume30d": 231541.31753795582,
       "riskScore": 25,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1327,10 +1306,10 @@
         "Fantom"
       ],
       "chainCount": 6,
-      "tvl": 853456.782852483,
-      "volume24h": 3851.6785045566903,
-      "volume7d": 18812.317427177186,
-      "volume30d": 170691.3565704966,
+      "tvl": 847253.5228855617,
+      "volume24h": 2192.546450175106,
+      "volume7d": 6158.172230798755,
+      "volume30d": 169450.70457711234,
       "riskScore": 25,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1345,24 +1324,46 @@
       "chains": [
         "Ethereum",
         "Meter",
-        "Moonriver",
         "Binance",
+        "Moonriver",
         "Theta",
-        "Moonbeam",
         "Avalanche",
+        "Moonbeam",
         "Polygon"
       ],
       "chainCount": 8,
-      "tvl": 826888.7243368024,
-      "volume24h": 1176.5305815137576,
-      "volume7d": 28056.193635142023,
-      "volume30d": 165377.74486736048,
+      "tvl": 812087.602196879,
+      "volume24h": 1269.737376375693,
+      "volume7d": 14536.18538343712,
+      "volume30d": 162417.5204393758,
       "riskScore": 25,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": "https://passport.meter.io"
+    },
+    {
+      "id": "4954",
+      "name": "edgeX Bridge",
+      "slug": "edgex-bridge",
+      "chains": [
+        "Ethereum",
+        "edgeX L1",
+        "Arbitrum",
+        "Binance"
+      ],
+      "chainCount": 4,
+      "tvl": 97028518.42680363,
+      "volume24h": 123969.44181350918,
+      "volume7d": 6428964.59609832,
+      "volume30d": 19405703.685360726,
+      "riskScore": 20,
+      "riskLevel": "LOW",
+      "exploitHistory": {
+        "found": false
+      },
+      "url": "https://pro.edgex.exchange"
     },
     {
       "id": "6763",
@@ -1375,10 +1376,10 @@
         "Arbitrum"
       ],
       "chainCount": 4,
-      "tvl": 25083470.27237856,
-      "volume24h": 33360.48778625346,
-      "volume7d": 2078100.5568079238,
-      "volume30d": 5016694.054475713,
+      "tvl": 25382968.785364613,
+      "volume24h": 10730.134719359234,
+      "volume7d": 303074.54765377863,
+      "volume30d": 5076593.757072923,
       "riskScore": 20,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1396,10 +1397,10 @@
         "Ethereum"
       ],
       "chainCount": 3,
-      "tvl": 21888135.025791,
-      "volume24h": 1420187.5631449064,
-      "volume7d": 1349465.0421267867,
-      "volume30d": 4377627.0051582,
+      "tvl": 20592405.777347013,
+      "volume24h": 52827.916070564876,
+      "volume7d": 1219024.9388582266,
+      "volume30d": 4118481.1554694027,
       "riskScore": 20,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1419,16 +1420,37 @@
         "Ethereum"
       ],
       "chainCount": 5,
-      "tvl": 5591074.235615695,
-      "volume24h": 75739.95627449806,
-      "volume7d": 203438.74046226285,
-      "volume30d": 1118214.847123139,
+      "tvl": 5757098.929952247,
+      "volume24h": 79207.0791868507,
+      "volume7d": 170954.73067088623,
+      "volume30d": 1151419.7859904494,
       "riskScore": 20,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": "https://app.dexalot.com/"
+    },
+    {
+      "id": "5985",
+      "name": "Axelar Cross Chain",
+      "slug": "axelar-cross-chain",
+      "chains": [
+        "Binance",
+        "Arbitrum",
+        "Ethereum"
+      ],
+      "chainCount": 3,
+      "tvl": 5561022.275085379,
+      "volume24h": 119132.19294975935,
+      "volume7d": 278051.11375426897,
+      "volume30d": 1112204.4550170759,
+      "riskScore": 20,
+      "riskLevel": "LOW",
+      "exploitHistory": {
+        "found": false
+      },
+      "url": "https://axelar.network"
     },
     {
       "id": "1272",
@@ -1441,16 +1463,37 @@
         "Ethereum"
       ],
       "chainCount": 4,
-      "tvl": 2814486.3286701385,
-      "volume24h": 103836.4239779969,
-      "volume7d": 12850.760665016798,
-      "volume30d": 562897.2657340277,
+      "tvl": 2624605.732904659,
+      "volume24h": 11678.22843922929,
+      "volume7d": 177070.2153131112,
+      "volume30d": 524921.1465809318,
       "riskScore": 20,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": "https://iotube.org"
+    },
+    {
+      "id": "151",
+      "name": "Rhino.fi",
+      "slug": "rhino.fi",
+      "chains": [
+        "Polygon",
+        "Arbitrum",
+        "Ethereum"
+      ],
+      "chainCount": 3,
+      "tvl": 2083105.7918418003,
+      "volume24h": 311878.9339841359,
+      "volume7d": 1384920.0552998043,
+      "volume30d": 416621.1583683601,
+      "riskScore": 20,
+      "riskLevel": "LOW",
+      "exploitHistory": {
+        "found": false
+      },
+      "url": "https://rhino.fi"
     },
     {
       "id": "7094",
@@ -1463,37 +1506,16 @@
         "Arbitrum"
       ],
       "chainCount": 4,
-      "tvl": 1618199.9892373686,
-      "volume24h": 64012.1887475164,
-      "volume7d": 121941.53030105912,
-      "volume30d": 323639.9978474737,
+      "tvl": 1528077.3206362608,
+      "volume24h": 18421.232964992712,
+      "volume7d": 85103.45252781326,
+      "volume30d": 305615.46412725217,
       "riskScore": 20,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": "https://1sec.to/"
-    },
-    {
-      "id": "151",
-      "name": "Rhino.fi",
-      "slug": "rhino.fi",
-      "chains": [
-        "Polygon",
-        "Arbitrum",
-        "Ethereum"
-      ],
-      "chainCount": 3,
-      "tvl": 1251239.1577419732,
-      "volume24h": 408930.27724427945,
-      "volume7d": 480346.72527362016,
-      "volume30d": 250247.83154839464,
-      "riskScore": 20,
-      "riskLevel": "LOW",
-      "exploitHistory": {
-        "found": false
-      },
-      "url": "https://rhino.fi"
     },
     {
       "id": "5606",
@@ -1507,10 +1529,10 @@
         "Binance"
       ],
       "chainCount": 5,
-      "tvl": 1096370.8689922725,
-      "volume24h": 2054.161361297224,
-      "volume7d": 80433.10443012361,
-      "volume30d": 219274.17379845452,
+      "tvl": 1095026.5464842988,
+      "volume24h": 5061.875715628213,
+      "volume7d": 1342.6741578975757,
+      "volume30d": 219005.30929685978,
       "riskScore": 20,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1519,44 +1541,21 @@
       "url": "https://wavesbridge.io/"
     },
     {
-      "id": "1054",
-      "name": "ChainPort",
-      "slug": "chainport",
-      "chains": [
-        "Ethereum",
-        "Cardano",
-        "Binance",
-        "Polygon",
-        "Fantom"
-      ],
-      "chainCount": 5,
-      "tvl": 730262.0284384156,
-      "volume24h": 17388.94357599376,
-      "volume7d": 36497.1989058776,
-      "volume30d": 146052.40568768312,
-      "riskScore": 20,
-      "riskLevel": "LOW",
-      "exploitHistory": {
-        "found": false
-      },
-      "url": "https://app.chainport.io"
-    },
-    {
       "id": "2765",
       "name": "PepeTeam Bridge",
       "slug": "pepeteam-bridge",
       "chains": [
         "Ethereum",
         "Waves",
-        "Binance",
         "Polygon",
+        "Binance",
         "Tron"
       ],
       "chainCount": 5,
-      "tvl": 711084.7402693772,
-      "volume24h": 1907.1612125410672,
-      "volume7d": 9234.67472636519,
-      "volume30d": 142216.94805387544,
+      "tvl": 744646.695337858,
+      "volume24h": 17508.397838939858,
+      "volume7d": 35146.02060136242,
+      "volume30d": 148929.33906757162,
       "riskScore": 20,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1572,35 +1571,16 @@
         "Bitcoin"
       ],
       "chainCount": 1,
-      "tvl": 53853070.411259554,
-      "volume24h": 1859657.3793539267,
-      "volume7d": 2937303.7616622257,
-      "volume30d": 10770614.082251912,
+      "tvl": 52174266.07079042,
+      "volume24h": 381439.0310049267,
+      "volume7d": 1626469.6454915833,
+      "volume30d": 10434853.214158084,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": "https://www.okx.com/xbtc#transparency"
-    },
-    {
-      "id": "5599",
-      "name": "Grvt Bridge",
-      "slug": "grvt-bridge",
-      "chains": [
-        "Ethereum"
-      ],
-      "chainCount": 1,
-      "tvl": 50558392.316541344,
-      "volume24h": 49955.042698523874,
-      "volume7d": 3203239.3230498964,
-      "volume30d": 10111678.46330827,
-      "riskScore": 15,
-      "riskLevel": "LOW",
-      "exploitHistory": {
-        "found": false
-      },
-      "url": "https://grvt.io"
     },
     {
       "id": "6310",
@@ -1610,16 +1590,54 @@
         "Bitcoin"
       ],
       "chainCount": 1,
-      "tvl": 49173743.25496473,
-      "volume24h": 1283309.6796090205,
-      "volume7d": 2638552.152101038,
-      "volume30d": 9834748.650992947,
+      "tvl": 48065453.40766453,
+      "volume24h": 351400.0551106084,
+      "volume7d": 1083310.9397710315,
+      "volume30d": 9613090.681532906,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": "https://tzbtc.io/transparency"
+    },
+    {
+      "id": "5599",
+      "name": "Grvt Bridge",
+      "slug": "grvt-bridge",
+      "chains": [
+        "Ethereum"
+      ],
+      "chainCount": 1,
+      "tvl": 47153103.719502136,
+      "volume24h": 496080.5872452012,
+      "volume7d": 3175930.227482602,
+      "volume30d": 9430620.743900428,
+      "riskScore": 15,
+      "riskLevel": "LOW",
+      "exploitHistory": {
+        "found": false
+      },
+      "url": "https://grvt.io"
+    },
+    {
+      "id": "8029",
+      "name": "wTAO",
+      "slug": "wtao",
+      "chains": [
+        "Bittensor"
+      ],
+      "chainCount": 1,
+      "tvl": 25820902.63250852,
+      "volume24h": 163130.18919970474,
+      "volume7d": 1291045.131625426,
+      "volume30d": 5164180.526501704,
+      "riskScore": 15,
+      "riskLevel": "LOW",
+      "exploitHistory": {
+        "found": false
+      },
+      "url": "https://bittensor.com"
     },
     {
       "id": "3648",
@@ -1629,35 +1647,16 @@
         "Ethereum"
       ],
       "chainCount": 1,
-      "tvl": 27067403.420125112,
-      "volume24h": 32332.97407425049,
-      "volume7d": 1615401.9301821645,
-      "volume30d": 5413480.684025023,
+      "tvl": 25052879.55341304,
+      "volume24h": 6083.681746424426,
+      "volume7d": 1866361.0443378142,
+      "volume30d": 5010575.910682608,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": "https://app.paradex.trade/r/defillama"
-    },
-    {
-      "id": "4548",
-      "name": "Mezo Bridge",
-      "slug": "mezo-bridge",
-      "chains": [
-        "Ethereum"
-      ],
-      "chainCount": 1,
-      "tvl": 17523056.409541227,
-      "volume24h": 133449.817798613,
-      "volume7d": 203630.40219203773,
-      "volume30d": 3504611.2819082458,
-      "riskScore": 15,
-      "riskLevel": "LOW",
-      "exploitHistory": {
-        "found": false
-      },
-      "url": "https://mezo.org"
     },
     {
       "id": "1245",
@@ -1668,16 +1667,35 @@
         "Ethereum"
       ],
       "chainCount": 2,
-      "tvl": 17144642.758931097,
-      "volume24h": 309573.4288433093,
-      "volume7d": 708835.2995557091,
-      "volume30d": 3428928.5517862197,
+      "tvl": 16845349.218370847,
+      "volume24h": 132651.52769189366,
+      "volume7d": 294068.781743128,
+      "volume30d": 3369069.84367417,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": null
+    },
+    {
+      "id": "4548",
+      "name": "Mezo Bridge",
+      "slug": "mezo-bridge",
+      "chains": [
+        "Ethereum"
+      ],
+      "chainCount": 1,
+      "tvl": 16112083.062791852,
+      "volume24h": 150904.64836159072,
+      "volume7d": 1228912.6451530762,
+      "volume30d": 3222416.6125583705,
+      "riskScore": 15,
+      "riskLevel": "LOW",
+      "exploitHistory": {
+        "found": false
+      },
+      "url": "https://mezo.org"
     },
     {
       "id": "5303",
@@ -1687,10 +1705,10 @@
         "Ethereum"
       ],
       "chainCount": 1,
-      "tvl": 13962342.41017858,
-      "volume24h": 460699.659519303,
-      "volume7d": 387705.62383610435,
-      "volume30d": 2792468.482035716,
+      "tvl": 13987698.171244185,
+      "volume24h": 174880.0291463855,
+      "volume7d": 25401.807395106116,
+      "volume30d": 2797539.6342488374,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1706,10 +1724,10 @@
         "Ethereum"
       ],
       "chainCount": 1,
-      "tvl": 12181570.12491007,
-      "volume24h": 44818.968691782226,
-      "volume7d": 934621.9061713801,
-      "volume30d": 2436314.024982014,
+      "tvl": 12047333.71123281,
+      "volume24h": 39351.20697749578,
+      "volume7d": 132757.1778667573,
+      "volume30d": 2409466.742246562,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1745,10 +1763,10 @@
         "Bitcoin"
       ],
       "chainCount": 1,
-      "tvl": 11378340.030701717,
-      "volume24h": 312838.88009385415,
-      "volume7d": 256281.95450637199,
-      "volume30d": 2275668.0061403434,
+      "tvl": 10966196.424943104,
+      "volume24h": 80172.38483938716,
+      "volume7d": 313612.8347035231,
+      "volume30d": 2193239.284988621,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1764,10 +1782,10 @@
         "Ethereum"
       ],
       "chainCount": 1,
-      "tvl": 9599783.638310391,
-      "volume24h": 195025.2484966785,
-      "volume7d": 221053.37099941436,
-      "volume30d": 1919956.7276620783,
+      "tvl": 9625257.939287815,
+      "volume24h": 464271.6947595039,
+      "volume7d": 25541.900418695932,
+      "volume30d": 1925051.587857563,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1783,16 +1801,35 @@
         "Bitcoin"
       ],
       "chainCount": 1,
-      "tvl": 7814174.308873713,
-      "volume24h": 203930.08270154928,
-      "volume7d": 320283.5450718363,
-      "volume30d": 1562834.8617747426,
+      "tvl": 7682245.202415748,
+      "volume24h": 100933.096616298,
+      "volume7d": 129701.70680666297,
+      "volume30d": 1536449.0404831497,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": "https://obelisk.nodedao.com"
+    },
+    {
+      "id": "7730",
+      "name": "TxFlow Bridge",
+      "slug": "txflow-bridge",
+      "chains": [
+        "Arbitrum"
+      ],
+      "chainCount": 1,
+      "tvl": 7645896.298676202,
+      "volume24h": 26321.78639904731,
+      "volume7d": 6499043.006792395,
+      "volume30d": 1529179.2597352406,
+      "riskScore": 15,
+      "riskLevel": "LOW",
+      "exploitHistory": {
+        "found": false
+      },
+      "url": "https://txflow.com/"
     },
     {
       "id": "6369",
@@ -1802,10 +1839,10 @@
         "Ethereum"
       ],
       "chainCount": 1,
-      "tvl": 7275629.400000002,
-      "volume24h": 486481.7463534466,
-      "volume7d": 485904.6763377972,
-      "volume30d": 1455125.8800000006,
+      "tvl": 6958125.439999997,
+      "volume24h": 90157.2761527818,
+      "volume7d": 83800.45284207832,
+      "volume30d": 1391625.0879999995,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1821,10 +1858,10 @@
         "Binance"
       ],
       "chainCount": 1,
-      "tvl": 5718970.240032712,
-      "volume24h": 90226.41099391312,
-      "volume7d": 222829.6281272132,
-      "volume30d": 1143794.0480065425,
+      "tvl": 5497368.185896421,
+      "volume24h": 72814.2589476624,
+      "volume7d": 213015.28618046665,
+      "volume30d": 1099473.6371792841,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
@@ -1841,35 +1878,16 @@
         "Ethereum"
       ],
       "chainCount": 2,
-      "tvl": 5187551.959512319,
-      "volume24h": 130044.49659524586,
-      "volume7d": 277766.6183798176,
-      "volume30d": 1037510.391902464,
+      "tvl": 5077641.323968652,
+      "volume24h": 41063.58253960954,
+      "volume7d": 107581.91712313012,
+      "volume30d": 1015528.2647937303,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": "https://citrea.xyz/bridge"
-    },
-    {
-      "id": "7730",
-      "name": "TxFlow Bridge",
-      "slug": "txflow-bridge",
-      "chains": [
-        "Arbitrum"
-      ],
-      "chainCount": 1,
-      "tvl": 4132907.81583695,
-      "volume24h": 8423.308515782235,
-      "volume7d": 354307.1981283247,
-      "volume30d": 826581.5631673901,
-      "riskScore": 15,
-      "riskLevel": "LOW",
-      "exploitHistory": {
-        "found": false
-      },
-      "url": "https://txflow.com/"
     },
     {
       "id": "4585",
@@ -1879,35 +1897,16 @@
         "Endurance"
       ],
       "chainCount": 1,
-      "tvl": 2998751.2161615007,
-      "volume24h": 119219.79345809862,
-      "volume7d": 45153.12338583059,
-      "volume30d": 599750.2432323002,
+      "tvl": 2884726.6520907567,
+      "volume24h": 204072.50095914013,
+      "volume7d": 109688.89222792747,
+      "volume30d": 576945.3304181513,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": "https://endurance-bridge.fusionist.io/"
-    },
-    {
-      "id": "7671",
-      "name": "Dango Bridge",
-      "slug": "dango-bridge",
-      "chains": [
-        "Ethereum"
-      ],
-      "chainCount": 1,
-      "tvl": 2932521.3075876273,
-      "volume24h": 172306.45184296425,
-      "volume7d": 274047.5863895945,
-      "volume30d": 586504.2615175255,
-      "riskScore": 15,
-      "riskLevel": "LOW",
-      "exploitHistory": {
-        "found": false
-      },
-      "url": "https://dango.exchange/"
     },
     {
       "id": "4558",
@@ -1917,16 +1916,35 @@
         "Ethereum"
       ],
       "chainCount": 1,
-      "tvl": 2817008.230592113,
-      "volume24h": 36114.193029207134,
-      "volume7d": 49864.91055044541,
-      "volume30d": 563401.6461184226,
+      "tvl": 2841422.8050657096,
+      "volume24h": 19492.123750513965,
+      "volume7d": 24626.171813019937,
+      "volume30d": 568284.561013142,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": "https://www.gobob.xyz"
+    },
+    {
+      "id": "7671",
+      "name": "Dango Bridge",
+      "slug": "dango-bridge",
+      "chains": [
+        "Ethereum"
+      ],
+      "chainCount": 1,
+      "tvl": 2636250.5559302745,
+      "volume24h": 72833.22746156403,
+      "volume7d": 266338.70715336245,
+      "volume30d": 527250.1111860549,
+      "riskScore": 15,
+      "riskLevel": "LOW",
+      "exploitHistory": {
+        "found": false
+      },
+      "url": "https://dango.exchange/"
     },
     {
       "id": "5323",
@@ -1936,35 +1954,16 @@
         "Bitcoin"
       ],
       "chainCount": 1,
-      "tvl": 2613130.8025310836,
-      "volume24h": 66717.31218456576,
-      "volume7d": 128701.90855842896,
-      "volume30d": 522626.16050621675,
+      "tvl": 2564026.925202204,
+      "volume24h": 33687.44039657166,
+      "volume7d": 48181.156290042214,
+      "volume30d": 512805.38504044083,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": "https://exsat.network"
-    },
-    {
-      "id": "6637",
-      "name": "TAC Cross Chain Layer",
-      "slug": "tac-cross-chain-layer",
-      "chains": [
-        "TON"
-      ],
-      "chainCount": 1,
-      "tvl": 1933796.61964714,
-      "volume24h": 37878.73181399511,
-      "volume7d": 588682.6627944433,
-      "volume30d": 386759.323929428,
-      "riskScore": 15,
-      "riskLevel": "LOW",
-      "exploitHistory": {
-        "found": false
-      },
-      "url": "https://tac.build"
     },
     {
       "id": "3866",
@@ -1975,16 +1974,35 @@
         "Near"
       ],
       "chainCount": 2,
-      "tvl": 1777342.6924552291,
-      "volume24h": 96232.87017373665,
-      "volume7d": 85357.59440547951,
-      "volume30d": 355468.5384910458,
+      "tvl": 1779669.5523306008,
+      "volume24h": 45386.52943406692,
+      "volume7d": 7176.551143090461,
+      "volume30d": 355933.91046612017,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": "https://rainbowbridge.app/transfer"
+    },
+    {
+      "id": "6637",
+      "name": "TAC Cross Chain Layer",
+      "slug": "tac-cross-chain-layer",
+      "chains": [
+        "TON"
+      ],
+      "chainCount": 1,
+      "tvl": 1773501.3545790007,
+      "volume24h": 26835.440362744816,
+      "volume7d": 147008.153206317,
+      "volume30d": 354700.2709158002,
+      "riskScore": 15,
+      "riskLevel": "LOW",
+      "exploitHistory": {
+        "found": false
+      },
+      "url": "https://tac.build"
     },
     {
       "id": "6614",
@@ -2013,35 +2031,16 @@
         "RSK"
       ],
       "chainCount": 1,
-      "tvl": 1077298.708327841,
-      "volume24h": 26097.38393715396,
-      "volume7d": 56747.72162907618,
-      "volume30d": 215459.7416655682,
+      "tvl": 1032502.3538136182,
+      "volume24h": 8793.820470093206,
+      "volume7d": 42933.62752657178,
+      "volume30d": 206500.47076272365,
       "riskScore": 15,
       "riskLevel": "LOW",
       "exploitHistory": {
         "found": false
       },
       "url": "https://babelfish.money"
-    },
-    {
-      "id": "7470",
-      "name": "Conduit Bridge",
-      "slug": "conduit-bridge",
-      "chains": [
-        "Ethereum"
-      ],
-      "chainCount": 1,
-      "tvl": 697390.8815327667,
-      "volume24h": 35755.56565593858,
-      "volume7d": 60509.57613054689,
-      "volume30d": 139478.17630655336,
-      "riskScore": 15,
-      "riskLevel": "LOW",
-      "exploitHistory": {
-        "found": false
-      },
-      "url": "https://www.conduit.xyz/"
     }
   ]
 }
