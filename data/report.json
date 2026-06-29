@@ -1,29 +1,29 @@
 {
   "meta": {
-    "generatedAt": "2026-06-22T13:30:30.884Z",
+    "generatedAt": "2026-06-29T12:27:13.476Z",
     "model": "gpt-4o-mini",
     "bridgesAnalyzed": 80
   },
   "summary": {
     "totalBridges": 80,
-    "totalTVL": 46158339627.30792,
+    "totalTVL": 44054749115.27692,
     "riskBreakdown": {
       "CRITICAL": 1,
       "HIGH": 4,
       "MEDIUM": 23,
       "LOW": 52
     },
-    "totalVolume24h": 394878180.6816074,
-    "totalVolume7d": 905409210.5171468
+    "totalVolume24h": 186904423.0399516,
+    "totalVolume7d": 1817413328.2943966
   },
-  "report": "**Bridge Security Intelligence Brief — Week of June 22, 2026**\n\nThe current risk landscape for cross-chain bridges remains precarious, with 80 bridges under observation. Of these, 1 is classified as critical, 4 as high risk, 23 at medium risk, and 52 at low risk. The total value locked (TVL) across these bridges stands at a substantial $46.2 billion. Notably, the Multichain bridge has recently been exploited, highlighting vulnerabilities in high-usage bridges; it currently holds a risk score of 70/100 and a TVL of $39 million. These metrics underscore the ongoing threat environment, especially as attackers are likely to target bridges with concentrated capital.\n\nCapital concentration remains a significant concern, particularly with the LayerZero V2 bridge, which has the highest TVL at $7.6 billion and is rated as high risk. Other notable bridges include WBTC and Hyperliquid, with TVLs of $7.4 billion and $5.8 billion, respectively, both categorized as medium risk. This concentration of assets in a select number of bridges increases the potential impact of a breach. Historical data indicates that attackers are motivated by the significant financial rewards associated with exploiting high-value targets, as evidenced by the $570 million loss from the BSC Token Hub incident in 2022, the largest recorded exploit in this sector.\n\nLessons from past exploits caution against complacency. The Orbit Chain Bridge incident in January 2024, which resulted in an $82 million loss due to a compromised multi-signature wallet, emphasizes the importance of robust governance structures and multi-sig configurations. Similarly, the Multichain exploit in July 2023, attributed to a suspected private key compromise, highlights the critical need for stringent access controls and security hygiene. The historical total losses from bridge exploits have now reached $2.85 billion across 10 significant incidents, signaling an urgent need for the implementation of enhanced security protocols.\n\nKey takeaways from the current analysis indicate that while the overall landscape shows a predominance of low-risk bridges, the presence of critical and high-risk scenarios necessitates immediate attention. Stakeholders must prioritize security measures for bridges with high capital concentration, implement advanced protection against common attack vectors, and learn from previous incidents to mitigate future risks. As the ecosystem continues to evolve, continuous monitoring and adaptive security strategies will be paramount in safeguarding cross-chain bridge infrastructure.",
+  "report": "**Bridge Security Intelligence Brief — Week of June 29, 2026**\n\nThe current risk landscape for cross-chain bridges remains concerning, with a total of 80 bridges actively monitored. The overall risk categorization shows a critical bridge with a score of 70, alongside four high-risk bridges. Notably, the total value locked (TVL) across these bridges is $44.1 billion, signaling significant capital concentration that poses a lucrative target for potential attackers. The Multichain bridge, recently exploited and currently holding a TVL of $36 million, exemplifies vulnerabilities that can be exploited, emphasizing the need for robust security measures across the ecosystem.\n\nCapital concentration within high-value bridges presents an attractive opportunity for attackers, particularly in the case of LayerZero V2, which boasts a TVL of $7.4 billion but is categorized as high risk. This bridge, along with others like Coinbase Bridge ($5.4 billion) and WBTC ($6.9 billion), represents critical nodes in the network that could experience catastrophic financial impacts if compromised. The economic incentives for attackers are clear: historical data shows that total losses from bridge exploits have reached $2.85 billion across 10 notable incidents, with the BSC Token Hub exploit alone accounting for a staggering $570 million. Such figures underline the lucrative nature of bridge vulnerabilities.\n\nHistorical exploits provide important lessons for the current risk landscape. Events such as the $125 million loss at Multichain due to a suspected private key compromise and the $82 million loss at Orbit Chain Bridge from a compromised multi-signature wallet highlight the necessity for enhanced cryptographic practices and rigorous key management protocols. Additionally, the DNS hijacking incident of Celer cBridge serves as a reminder of the importance of securing all components of the bridge ecosystem, including front-end interfaces. The diverse methods of exploitation encountered underscore the need for a multifaceted approach to security.\n\nKey takeaways from this week's analysis include the urgent need for continuous monitoring and proactive security measures, especially for high-value bridges with significant TVL. Organizations should prioritize the implementation of advanced cryptographic techniques, robust multi-signature schemes, and comprehensive incident response strategies. The historical context of losses illustrates a clear trend: as the value of bridges increases, so too does the sophistication of attacks. The cross-chain community must remain vigilant and proactive to mitigate these risks and protect the integrity of the blockchain ecosystem.",
   "topRiskBridges": [
     {
       "name": "Multichain",
       "riskScore": 70,
       "riskLevel": "CRITICAL",
       "chainCount": 54,
-      "tvl": 38535953.61501129,
+      "tvl": 36407741.37019566,
       "exploitHistory": {
         "found": true,
         "details": {
