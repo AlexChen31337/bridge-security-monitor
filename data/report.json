@@ -1,29 +1,29 @@
 {
   "meta": {
-    "generatedAt": "2026-09-28T16:22:04.150Z",
+    "generatedAt": "2026-10-05T16:42:38.178Z",
     "model": "gpt-4o-mini",
     "bridgesAnalyzed": 80
   },
   "summary": {
     "totalBridges": 80,
-    "totalTVL": 57071748869.693306,
+    "totalTVL": 61124342550.99916,
     "riskBreakdown": {
       "CRITICAL": 1,
       "HIGH": 6,
       "MEDIUM": 23,
       "LOW": 50
     },
-    "totalVolume24h": 868312847.0749016,
-    "totalVolume7d": 3195330598.3206697
+    "totalVolume24h": 233893066.1830528,
+    "totalVolume7d": 6713572359.595472
   },
-  "report": "## 🌰 Bridge Security Intelligence Brief — Mon Sep 28 2026\n\n**Executive Summary:** Cross-chain bridges remain the highest-value attack surface in DeFi, with over $2.85B stolen in recorded exploits. This week's scan of 80 active bridges identifies 1 protocols at CRITICAL risk and 6 at HIGH risk, collectively securing $57.1B in total value locked.\n\n**Risk Landscape:** Multichain leads the CRITICAL-risk category with a score of 70/100, operating across 54 chains. Historical data demonstrates that validator key compromise remains the single most devastating attack vector — the Ronin ($625M) and Multichain ($125M) hacks both resulted from insufficient key management. Bridges with multi-chain architectures face multiplicative risk: each chain integration adds relay trust assumptions, additional smart contract surface, and potential state divergence vulnerabilities.\n\n**Capital Concentration:** WBTC holds approximately $9.7B in bridge TVL, representing an economically compelling target. At historical exploit-to-TVL ratios, a successful attack against any top-5 bridge could net an attacker $100M–$500M. This economics reality justifies sustained adversarial investment in reconnaissance — defenders must assume they are continuously targeted.\n\n**Key Takeaways:**\n🌰 Validator key management (HSMs, geographic distribution, ≥7/10 multi-sig) is non-negotiable for bridges holding >$100M TVL\n🌰 Previously exploited bridges carry 40%+ recurrence risk — require complete architecture review before redeployment\n🌰 Monitor volume anomalies (>3× daily baseline) as early indicators of in-progress drains\n🌰 Smart contract upgradeability without 48-72h timelocks is a critical unmitigated risk factor",
+  "report": "## 🌰 Bridge Security Intelligence Brief — Mon Oct 05 2026\n\n**Executive Summary:** Cross-chain bridges remain the highest-value attack surface in DeFi, with over $2.85B stolen in recorded exploits. This week's scan of 80 active bridges identifies 1 protocols at CRITICAL risk and 6 at HIGH risk, collectively securing $61.1B in total value locked.\n\n**Risk Landscape:** Multichain leads the CRITICAL-risk category with a score of 70/100, operating across 54 chains. Historical data demonstrates that validator key compromise remains the single most devastating attack vector — the Ronin ($625M) and Multichain ($125M) hacks both resulted from insufficient key management. Bridges with multi-chain architectures face multiplicative risk: each chain integration adds relay trust assumptions, additional smart contract surface, and potential state divergence vulnerabilities.\n\n**Capital Concentration:** LayerZero V2 holds approximately $11.7B in bridge TVL, representing an economically compelling target. At historical exploit-to-TVL ratios, a successful attack against any top-5 bridge could net an attacker $100M–$500M. This economics reality justifies sustained adversarial investment in reconnaissance — defenders must assume they are continuously targeted.\n\n**Key Takeaways:**\n🌰 Validator key management (HSMs, geographic distribution, ≥7/10 multi-sig) is non-negotiable for bridges holding >$100M TVL\n🌰 Previously exploited bridges carry 40%+ recurrence risk — require complete architecture review before redeployment\n🌰 Monitor volume anomalies (>3× daily baseline) as early indicators of in-progress drains\n🌰 Smart contract upgradeability without 48-72h timelocks is a critical unmitigated risk factor",
   "topRiskBridges": [
     {
       "name": "Multichain",
       "riskScore": 70,
       "riskLevel": "CRITICAL",
       "chainCount": 54,
-      "tvl": 45625326.3323094,
+      "tvl": 46252686.08027181,
       "exploitHistory": {
         "found": true,
         "details": {
